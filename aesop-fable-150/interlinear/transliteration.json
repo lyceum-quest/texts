@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-03-23T17:03:52Z",
+  "standard": "lyceum-greek-latin-v1",
+  "lines": [
+    {
+      "ref": "150.title",
+      "greek": "Καρκῖνος καὶ ἀλώπηξ.",
+      "transliteration": "Karkinos kai alōpēx."
+    },
+    {
+      "ref": "150.1",
+      "greek": "Καρκῖνος ἀναβὰς ἀπὸ τῆς θαλάσσης ἐπί τινος αἰγιαλοῦ μόνος ἐνέμετο.",
+      "transliteration": "Karkinos anabas apo tēs thalassēs epi tinos aigialou monos enemeto."
+    },
+    {
+      "ref": "150.2",
+      "greek": "Ἀλώπηξ δὲ λιμώττουσα, ὡς ἐθεάσατο αὐτόν, ἀποροῦσα τροφῆς, προσδραμοῦσα συνέλαβεν αὐτόν.",
+      "transliteration": "Alōpēx de limōttousa, hōs etheasato auton, aporousa trophēs, prosdramousa sunelaben auton."
+    },
+    {
+      "ref": "150.3",
+      "greek": "Ὁ δὲ μέλλων καταβιβρώσκεσθαι ἔφη· Ἀλλ' ἔγωγε δίκαια πέπονθα, ὅτι θαλάσσιος ὢν χερσαῖος ἠβουλήθην γενέσθαι.",
+      "transliteration": "Ho de mellōn katabibrōskesthai ephē; All' egōge dikaia pepontha, hoti thalassios ōn chersaios ēboulēthēn genesthai."
+    },
+    {
+      "ref": "150.4",
+      "greek": "Οὕτω καὶ τῶν ἀνθρώπων οἱ τὰ οἰκεῖα καταλιπόντες ἐπιτηδεύματα καὶ τοῖς μηδὲν προσήκουσιν ἐπιχειροῦντες εἰκότως δυστυχοῦσιν.",
+      "transliteration": "Outō kai tōn anthrōpōn oi ta oikeia katalipontes epitēdeumata kai tois mēden prosēkousin epicheirountes eikotōs dustuchousin."
+    }
+  ]
+}

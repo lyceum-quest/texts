@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-03-23T16:52:09Z",
+  "reference_system": "fable.sentence",
+  "unit": "sentence",
+  "entries": [
+    {
+      "source_path": "clean/greek.txt",
+      "structured_path": "structured/greek.json",
+      "unit_count": 5,
+      "first_ref": "150.title",
+      "last_ref": "150.4"
+    }
+  ]
+}

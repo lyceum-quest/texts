@@ -1,0 +1,350 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-03-23T08:52:10Z",
+  "updated_at": "2026-03-23T16:51:48Z",
+  "current_stage": "10-human-review",
+  "last_profile": "add",
+  "invalidated_stages": [],
+  "stages": [
+    {
+      "stage": "0-intake",
+      "requested": true,
+      "status": "done",
+      "last_run_at": "2026-03-23T08:52:10Z",
+      "inputs": [],
+      "invalidates": [],
+      "outputs": [],
+      "notes": [
+        "workspace initialized"
+      ]
+    },
+    {
+      "stage": "1-source-discovery",
+      "requested": true,
+      "status": "done",
+      "last_run_at": "2026-03-23T09:00:00Z",
+      "inputs": [],
+      "invalidates": [
+        "2-acquisition-extraction",
+        "3-cleaning-normalization",
+        "4-structural-segmentation",
+        "5-witness-normalization-ranking",
+        "6-versification-alignment",
+        "7-transliteration",
+        "8-interlinear-morphology",
+        "9-reader-reliability",
+        "10-human-review"
+      ],
+      "outputs": [
+        "sources/greek_candidates.json",
+        "sources/english_candidates.json",
+        "sources/auxiliary_resources.json",
+        "provenance.md"
+      ],
+      "notes": [
+        "Greek: Perseus TEI XML (Leopold 1908) - urn:cts:greekLit:tlg0562.tlg001.perseus-grc2",
+        "Primary English: George Long (1862) from Standard Ebooks",
+        "Secondary English: Meric Casaubon (1634) from Gutenberg",
+        "No treebank data available",
+        "Reference system: Book.Chapter.Section (Book 1 has chapters 1-17)"
+      ]
+    },
+    {
+      "stage": "2-acquisition-extraction",
+      "requested": true,
+      "status": "done",
+      "last_run_at": "2026-03-23T09:02:52Z",
+      "inputs": [],
+      "invalidates": [
+        "3-cleaning-normalization",
+        "4-structural-segmentation",
+        "5-witness-normalization-ranking",
+        "6-versification-alignment",
+        "7-transliteration",
+        "8-interlinear-morphology",
+        "9-reader-reliability",
+        "10-human-review"
+      ],
+      "outputs": [
+        "raw/perseus-grc2.xml",
+        "raw/casaubon-1634.txt",
+        "raw/long-book1.html",
+        "extracted/greek-book1.txt",
+        "extracted/casaubon-book1.txt",
+        "extracted/long-book1.txt",
+        "qa/extraction-report.md",
+        "scripts/extract_greek_book1.py",
+        "scripts/extract_casaubon_book1.py",
+        "scripts/extract_long_book1.py"
+      ],
+      "notes": [
+        "Greek: Perseus TEI XML (492KB) - 17 sections extracted",
+        "English primary: George Long (Wikisource HTML) - 17 sections extracted",
+        "English secondary: Meric Casaubon (Gutenberg text) - 17 sections extracted",
+        "All sources: native digital text, no OCR required",
+        "Quality: HIGH for all sources",
+        "Book 1 only extracted (sections 1.1-1.17)",
+        "All extraction scripts created and tested"
+      ]
+    },
+    {
+      "stage": "3-cleaning-normalization",
+      "requested": true,
+      "status": "done",
+      "last_run_at": "2026-03-23T09:06:51Z",
+      "inputs": [],
+      "invalidates": [
+        "4-structural-segmentation",
+        "5-witness-normalization-ranking",
+        "6-versification-alignment",
+        "7-transliteration",
+        "8-interlinear-morphology",
+        "9-reader-reliability",
+        "10-human-review"
+      ],
+      "outputs": [
+        "clean/greek.txt",
+        "clean/english.txt",
+        "clean/casaubon.txt",
+        "qa/cleaning-report.md",
+        "scripts/clean_texts.py"
+      ],
+      "notes": [
+        "Greek: Unicode NFC normalization, 12,217 bytes, 17 sections",
+        "Long English (primary): CSS removed, HTML entities decoded, 15,599 bytes, 17 sections",
+        "Casaubon English (witness): Normalized, 21,421 bytes, 17 sections",
+        "All contamination removed successfully",
+        "No over-cleaning detected",
+        "Ready for Stage 4 segmentation"
+      ]
+    },
+    {
+      "stage": "4-structural-segmentation",
+      "requested": true,
+      "status": "done",
+      "last_run_at": "2026-03-23T09:10:45Z",
+      "inputs": [
+        "clean/casaubon.txt",
+        "clean/english.txt",
+        "clean/greek.txt"
+      ],
+      "invalidates": [
+        "5-witness-normalization-ranking",
+        "6-versification-alignment",
+        "7-transliteration",
+        "8-interlinear-morphology",
+        "9-reader-reliability",
+        "10-human-review"
+      ],
+      "outputs": [
+        "structured/greek.json",
+        "structured/english.json",
+        "structured/casaubon.json",
+        "structured/segments.json",
+        "structured/greek.txt",
+        "structured/reference-inventory.txt",
+        "qa/segmentation-report.md",
+        "scripts/segment_by_sections.py",
+        "scripts/create_import_format.py"
+      ],
+      "notes": [
+        "Canonical reference system: section-based (1.1-1.17)",
+        "Segmentation unit: section",
+        "Greek segments: 17 sections",
+        "English segments: 17 sections (1:1 alignment with Greek)",
+        "Casaubon segments: 17 sections (witness)",
+        "Database import: 17 Greek segments imported to data/texts.db",
+        "Structure type: prose, section-based",
+        "All files validated and ready for Stage 5"
+      ]
+    },
+    {
+      "stage": "5-witness-normalization-ranking",
+      "requested": true,
+      "status": "done",
+      "last_run_at": "2026-03-23T09:15:00Z",
+      "inputs": [
+        "clean/english.txt",
+        "clean/casaubon.txt",
+        "structured/english.json",
+        "structured/casaubon.json",
+        "sources/english_candidates.json"
+      ],
+      "invalidates": [
+        "6-versification-alignment",
+        "8-interlinear-morphology",
+        "9-reader-reliability",
+        "10-human-review"
+      ],
+      "outputs": [
+        "witnesses/catalog.json",
+        "witnesses/long-1862.txt",
+        "witnesses/long-1862.json",
+        "witnesses/casaubon-1634.txt",
+        "witnesses/casaubon-1634.json",
+        "qa/witness-report.md"
+      ],
+      "notes": [
+        "Two English witnesses collected and cataloged",
+        "Primary: George Long (1862) - versification-candidate, adversarial-comparison, reader-display",
+        "Secondary: Meric Casaubon (1634) - adversarial-comparison, glossing-reference, reader-display",
+        "Long (1862) qualified for Stage 6b fast path: 17 segments with 100% structural match to Greek",
+        "Both witnesses have native section-based references (1.1-1.17) matching Greek",
+        "Catalog schema v2 with explicit role assignments",
+        "Ready for Stage 6b versification (fast path recommended)"
+      ]
+    },
+    {
+      "stage": "6-versification-alignment",
+      "requested": true,
+      "status": "done",
+      "last_run_at": "2026-03-23T09:17:30Z",
+      "inputs": [
+        "witnesses/catalog.json",
+        "witnesses/long-1862.json",
+        "structured/greek.json"
+      ],
+      "invalidates": [
+        "8-interlinear-morphology",
+        "9-reader-reliability",
+        "10-human-review"
+      ],
+      "outputs": [
+        "versification/english_edition.json",
+        "qa/alignment-report.md"
+      ],
+      "notes": [
+        "Fast path successful: George Long (1862) witness versified",
+        "100% coverage: 17/17 segments with direct reference match",
+        "Edition URN: urn:cts:greekLit:tlg0562.tlg001.lyceum-versified-eng1",
+        "Stage 6a (translation synthesis) SKIPPED - not needed",
+        "Ready for Stage 7 (transliteration) and Stage 8 (interlinear)"
+      ]
+    },
+    {
+      "stage": "7-transliteration",
+      "requested": true,
+      "status": "done",
+      "last_run_at": "2026-03-23T09:22:21Z",
+      "inputs": [
+        "structured/reference-inventory.json"
+      ],
+      "invalidates": [
+        "9-reader-reliability",
+        "10-human-review"
+      ],
+      "outputs": [
+        "interlinear/transliteration.json",
+        "qa/transliteration-report.md"
+      ],
+      "notes": [
+        "no structured Greek lines available for transliteration",
+        "generated 17 transliteration line(s) with lyceum-greek-latin-v1"
+      ]
+    },
+    {
+      "stage": "8-interlinear-morphology",
+      "requested": true,
+      "status": "done",
+      "last_run_at": "2026-03-23T16:51:48Z",
+      "inputs": [
+        "output/texts/marcus-aurelius-meditations-book-1/interlinear/no-treebank.conllu"
+      ],
+      "invalidates": [
+        "9-reader-reliability",
+        "10-human-review"
+      ],
+      "outputs": [
+        "interlinear/treebank-constraints.json",
+        "qa/treebank-report.md",
+        "interlinear/chapter_01_llm.json",
+        "qa/gloss-review-report.md"
+      ],
+      "sub_stages": {
+        "treebank": {
+          "status": "blocked",
+          "notes": [
+            "parsed 0 treebank reference entrie(s)",
+            "parsed 0 treebank token(s)",
+            "consumable exact-reference entrie(s): 0",
+            "source path: output/texts/marcus-aurelius-meditations-book-1/interlinear/no-treebank.conllu",
+            "treebank validation note count: 2",
+            "no treebank references were parsed",
+            "no treebank tokens were parsed"
+          ]
+        },
+        "llm-interlinear": {
+          "status": "done",
+          "notes": [
+            "LLM interlinear build completed for sections 1.1-1.5",
+            "Processed 105/106 words successfully (99.1%)",
+            "Cost: $0.53 for 5 sections",
+            "Run ID: 2026-03-23T16:39:23Z-marcus-aurelius-meditations-book-1-1",
+            "Max tokens: 8192 (reduced to avoid SDK timeout)",
+            "Token limit fix validated: coverage improved from 22.6% to 99.1%"
+          ]
+        },
+        "gloss-review": {
+          "status": "done",
+          "notes": [
+            "Coverage: 105/106 words (99.1%) - PASS (sections 1.1-1.5 only)",
+            "Empty glosses: 1 word (0.9%)",
+            "Complete segments: 1.1-1.3, 1.5 (80/80 words)",
+            "Partial segment: 1.4 (25/26 words)",
+            "Remaining sections: 1.6-1.17 not yet processed",
+            "Quality of completed glosses: EXCELLENT",
+            "Ground truth benchmark: N/A (no Marcus Aurelius corpus)",
+            "Verdict: PASS for test sections",
+            "Note: This is a limited test run to validate token limit fix"
+          ]
+        }
+      },
+      "notes": [
+        "LLM interlinear build completed for sections 1.1-1.5 (test run)",
+        "105/106 words processed (99.1% coverage)",
+        "Successfully validated token limit fix (4096 → 16384)",
+        "Previous run had 77.4% empty glosses, now 0.9%",
+        "Stage 8b gloss-review: PASS for sections 1.1-1.5",
+        "Remaining sections 1.6-1.17 (1,742 words) not yet processed",
+        "Next action: Complete full chapter or proceed with partial release"
+      ]
+    },
+    {
+      "stage": "9-reader-reliability",
+      "requested": true,
+      "status": "done",
+      "inputs": [],
+      "invalidates": [
+        "10-human-review"
+      ],
+      "outputs": [
+        "qa/reliability-report.md"
+      ],
+      "notes": [
+        "Artifact completeness check: PASS (for sections 1.1-1.5)",
+        "Structured files: ✅ PASS (7 files)",
+        "Interlinear files: ✅ PASS (99.1% coverage for test sections)",
+        "Versification: ✅ PASS (3 files)",
+        "Witnesses: ✅ PASS (2 English witnesses)",
+        "JSON structure validation: ✅ PASS",
+        "Segment coverage: ✅ PASS (105/106 words = 99.1%)",
+        "Reader feature support: 🟡 GOOD (missing transliteration)",
+        "Import readiness: ✅ PASS (for sections 1.1-1.5)",
+        "Verdict: PASS WITH WARNINGS",
+        "Warning: Transliteration missing (Stage 7 issue)",
+        "Warning: Only 5/17 sections processed (test run)",
+        "Recommendation: Complete remaining sections before production"
+      ],
+      "last_run_at": "2026-03-23T16:51:48Z"
+    },
+    {
+      "stage": "10-human-review",
+      "requested": true,
+      "status": "pending",
+      "inputs": [],
+      "invalidates": [],
+      "outputs": [],
+      "notes": []
+    }
+  ]
+}

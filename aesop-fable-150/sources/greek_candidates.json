@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "kind": "greek",
+  "generated_at": "2026-03-23T17:00:00Z",
+  "candidates": [
+    {
+      "id": "perseus-chambry",
+      "title": "Aesopica (Chambry Edition)",
+      "language": "grc",
+      "url": "http://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0130",
+      "editor": "Émile Chambry",
+      "translator": null,
+      "publication_year": "1925-1926",
+      "license": "public-domain",
+      "format": "html",
+      "extraction_method": "perseus-api-or-scrape",
+      "quality_notes": "Standard scholarly edition, numbered fables, clean Greek text",
+      "confidence_notes": "Perseus catalog confirms Chambry edition availability. May need to verify exact numbering for Fable 150.",
+      "recommended": true,
+      "ranking_score": 95,
+      "ranking_rationale": "Most authoritative modern edition with stable numbering, Perseus provides good structure for extraction"
+    },
+    {
+      "id": "archive-org-chambry",
+      "title": "Aesopi Fabulae (Chambry) - Internet Archive",
+      "language": "grc",
+      "url": "https://archive.org/details/aesopifabulae00aeso",
+      "editor": "Émile Chambry",
+      "translator": null,
+      "publication_year": "1925",
+      "license": "public-domain",
+      "format": "djvu-pdf",
+      "extraction_method": "ocr-or-manual",
+      "quality_notes": "Scanned edition, may require OCR",
+      "confidence_notes": "Archive.org has multiple Chambry editions. Text quality dependent on scan quality.",
+      "recommended": false,
+      "ranking_score": 70,
+      "ranking_rationale": "Backup if Perseus unavailable, but requires more extraction work"
+    },
+    {
+      "id": "wikisource-aesop",
+      "title": "Aesop's Fables (Greek) - Wikisource",
+      "language": "grc",
+      "url": "https://el.wikisource.org/wiki/Αισώπου_μύθοι",
+      "editor": "Community edited",
+      "translator": null,
+      "publication_year": "various",
+      "license": "cc-by-sa",
+      "format": "wikitext",
+      "extraction_method": "wikisource-api",
+      "quality_notes": "Community maintained, variable quality, numbering may differ",
+      "confidence_notes": "Greek Wikisource has Aesop texts but numbering system uncertain",
+      "recommended": false,
+      "ranking_score": 60,
+      "ranking_rationale": "Less authoritative but potentially useful for verification"
+    }
+  ]
+}

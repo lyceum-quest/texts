@@ -1,0 +1,583 @@
+{
+  "greek_edition": "workspace:homer-odyssey-proem-1-1-5",
+  "english_edition": "chapter_1.json",
+  "text": "homer-odyssey-proem-1-1-5",
+  "book": 1,
+  "run_id": "2026-03-29T02:14:29Z-homer-odyssey-proem-1-1-5-1",
+  "generator": "llm-interlinear-v1",
+  "segments": [
+    {
+      "reference": "1.1",
+      "greek": "ἄνδρα μοι ἔννεπε, Μοῦσα, πολύτροπον, ὃς μάλα πολλὰ",
+      "words": [
+        {
+          "form": "ἄνδρα",
+          "gloss": "man",
+          "lemma": "ἀνήρ",
+          "pos": "noun",
+          "morphology": "masc acc sg",
+          "provenance": {
+            "agent": "creator",
+            "model": "default",
+            "challenged": false
+          }
+        },
+        {
+          "form": "μοι",
+          "gloss": "to-me",
+          "lemma": "ἐγώ",
+          "pos": "pronoun",
+          "morphology": "masc/fem dat 1st sg",
+          "provenance": {
+            "agent": "referee",
+            "model": "default",
+            "challenged": true,
+            "decision": "accept-skeptic",
+            "creator_gloss": "me",
+            "skeptic_gloss": "to-me",
+            "reasoning": "μοι is the enclitic dative of ἐγώ. In an interlinear gloss, 'to me' or 'for me' correctly signals the dative case, whereas bare 'me' reads as accusative. 'To-me' is more precise for a gloss."
+          }
+        },
+        {
+          "form": "ἔννεπε",
+          "gloss": "tell",
+          "lemma": "ἐνέπω",
+          "pos": "verb",
+          "morphology": "imperf ind act 3rd sg (homeric ionic) imperfect active indicative",
+          "provenance": {
+            "agent": "referee",
+            "model": "default",
+            "challenged": true,
+            "decision": "accept-creator"
+          }
+        },
+        {
+          "form": "Μοῦσα",
+          "gloss": "Muse",
+          "lemma": "Μοῦσα",
+          "pos": "noun",
+          "morphology": "fem dat sg (doric aeolic)",
+          "provenance": {
+            "agent": "referee",
+            "model": "default",
+            "challenged": true,
+            "decision": "accept-creator"
+          }
+        },
+        {
+          "form": "πολύτροπον",
+          "gloss": "much-turned",
+          "lemma": "πολύτροπος",
+          "pos": "adjective",
+          "morphology": "masc/fem acc sg",
+          "provenance": {
+            "agent": "referee",
+            "model": "default",
+            "challenged": true,
+            "decision": "accept-skeptic",
+            "creator_gloss": "of-many-devices",
+            "skeptic_gloss": "much-turned",
+            "reasoning": "πολύτροπος = πολυ- (much/many) + τρόπος (turn/way). 'Of many devices' imports the interpretive sense of 'cunning tricks' from English translations rather than glossing the Greek morphemes. 'Much-turned' is a more faithful interlinear gloss. The lemma should indeed be lowercase πολύτροπος."
+          }
+        },
+        {
+          "form": "ὃς",
+          "gloss": "who",
+          "lemma": "ὅς",
+          "pos": "pronoun",
+          "morphology": "masc nom sg",
+          "provenance": {
+            "agent": "creator",
+            "model": "default",
+            "challenged": false
+          }
+        },
+        {
+          "form": "μάλα",
+          "gloss": "very",
+          "lemma": "μάλα",
+          "pos": "adverb",
+          "morphology": "indeclform (adverb)",
+          "provenance": {
+            "agent": "referee",
+            "model": "default",
+            "challenged": true,
+            "decision": "accept-skeptic",
+            "creator_gloss": "full",
+            "skeptic_gloss": "very",
+            "reasoning": "μάλα is an adverb meaning 'very/much/exceedingly'. 'Full' is an archaic English translation equivalent ('full many ways') but does not gloss the Greek word. The lemma and morph data were badly wrong (Μάλης, dual noun). 'Very' is the correct gloss."
+          }
+        },
+        {
+          "form": "πολλὰ",
+          "gloss": "much",
+          "lemma": "πολύς",
+          "pos": "adjective",
+          "morphology": "fem dat sg (doric aeolic)",
+          "provenance": {
+            "agent": "referee",
+            "model": "default",
+            "challenged": true,
+            "decision": "accept-neither",
+            "creator_gloss": "many-ways",
+            "skeptic_gloss": "many-things",
+            "reasoning": "πολλά is neuter accusative plural of πολύς, used adverbially here to modify the verb of wandering. The Skeptic's 'many-things' adds a noun that isn't in the Greek and doesn't capture the adverbial usage. 'Much' best represents the adverbial acc. pl. neuter sense ('wandered much'). The Creator's 'many-ways' wrongly imports the translation's phrasing."
+          }
+        }
+      ]
+    },
+    {
+      "reference": "1.2",
+      "greek": "πλάγχθη, ἐπεὶ Τροίης ἱερὸν πτολίεθρον ἔπερσεν·",
+      "words": [
+        {
+          "form": "πλάγχθη",
+          "gloss": "was-driven",
+          "lemma": "πλάζω",
+          "pos": "verb",
+          "morphology": "aor ind pass 3rd sg (homeric ionic) aorist passive indicative",
+          "provenance": {
+            "agent": "referee",
+            "model": "default",
+            "challenged": true,
+            "decision": "accept-skeptic",
+            "creator_gloss": "wandered",
+            "skeptic_gloss": "was-driven",
+            "reasoning": "πλάγχθη is aorist passive indicative of πλάζω. The passive voice is significant: Odysseus was driven off course (by storms, by the gods), not wandering voluntarily. 'Was-driven' correctly reflects the passive morphology and Homeric context. 'Wandered' obscures the passive voice, which is semantically important."
+          }
+        },
+        {
+          "form": "ἐπεὶ",
+          "gloss": "after",
+          "lemma": "ἐπεί",
+          "pos": "conjunction",
+          "morphology": "indeclform (conj)",
+          "provenance": {
+            "agent": "referee",
+            "model": "default",
+            "challenged": true,
+            "decision": "accept-skeptic",
+            "creator_gloss": "after",
+            "skeptic_gloss": "after",
+            "reasoning": "The Skeptic is right that the lemma and morphology are wrong (ἐπεί is an indeclinable conjunction, not from ἕπομαι), though the gloss 'after' remains correct. Accepting the Skeptic's correction for the metadata fix."
+          }
+        },
+        {
+          "form": "Τροίης",
+          "gloss": "of-Troy",
+          "lemma": "Τροίη",
+          "pos": "noun",
+          "morphology": "fem gen sg (epic ionic)",
+          "provenance": {
+            "agent": "creator",
+            "model": "default",
+            "challenged": false
+          }
+        },
+        {
+          "form": "ἱερὸν",
+          "gloss": "sacred",
+          "lemma": "ἱερός",
+          "pos": "adjective",
+          "morphology": "masc acc sg",
+          "provenance": {
+            "agent": "referee",
+            "model": "default",
+            "challenged": true,
+            "decision": "accept-skeptic",
+            "creator_gloss": "sacred",
+            "skeptic_gloss": "sacred",
+            "reasoning": "The Skeptic is correct: the lemma should be ἱερός (adjective), not ἱερόν (neuter noun 'temple'). Here ἱερόν is accusative neuter singular of the adjective ἱερός, modifying πτολίεθρον. The gloss 'sacred' is correct either way."
+          }
+        },
+        {
+          "form": "πτολίεθρον",
+          "gloss": "citadel",
+          "lemma": "πτολίεθρον",
+          "pos": "noun",
+          "morphology": "neut nom/voc/acc sg",
+          "provenance": {
+            "agent": "creator",
+            "model": "default",
+            "challenged": false
+          }
+        },
+        {
+          "form": "ἔπερσεν",
+          "gloss": "sacked",
+          "lemma": "πέρθω",
+          "pos": "verb",
+          "morphology": "aor ind act 3rd sg aorist active indicative",
+          "provenance": {
+            "agent": "creator",
+            "model": "default",
+            "challenged": false
+          }
+        }
+      ]
+    },
+    {
+      "reference": "1.3",
+      "greek": "πολλῶν δ᾽ ἀνθρώπων ἴδεν ἄστεα καὶ νόον ἔγνω,",
+      "words": [
+        {
+          "form": "πολλῶν",
+          "gloss": "of-many",
+          "lemma": "πολύς",
+          "pos": "adj",
+          "morphology": "fem gen pl",
+          "provenance": {
+            "agent": "referee",
+            "model": "default",
+            "challenged": true,
+            "decision": "accept-creator"
+          }
+        },
+        {
+          "form": "δ᾽",
+          "gloss": "PRT",
+          "lemma": "δέ",
+          "pos": "particle",
+          "morphology": "",
+          "provenance": {
+            "agent": "referee",
+            "model": "default",
+            "challenged": false,
+            "creator_gloss": "and",
+            "decision": "spot-check-fix",
+            "reasoning": "δέ is a postpositive particle, not simply 'and'. In this context it functions as a connective/transitional particle. A more precise gloss would be 'PRT' (particle marker) or 'and/but'. However, given that the translation uses no explicit conjunction here and δέ often carries a mild continuative sense, 'and' is defensible but imprecise. Keeping 'and' is acceptable for a reader's edition since δέ commonly glosses as 'and/but'."
+          }
+        },
+        {
+          "form": "ἀνθρώπων",
+          "gloss": "of-men",
+          "lemma": "ἄνθρωπος",
+          "pos": "noun",
+          "morphology": "masc gen pl",
+          "provenance": {
+            "agent": "creator",
+            "model": "default",
+            "challenged": false
+          }
+        },
+        {
+          "form": "ἴδεν",
+          "gloss": "he-saw",
+          "lemma": "εἶδον",
+          "pos": "verb",
+          "morphology": "aor ind act 3rd sg (homeric ionic) aorist active indicative",
+          "provenance": {
+            "agent": "creator",
+            "model": "default",
+            "challenged": false
+          }
+        },
+        {
+          "form": "ἄστεα",
+          "gloss": "cities",
+          "lemma": "ἄστυ",
+          "pos": "noun",
+          "morphology": "neut nom/voc/acc pl (homeric ionic)",
+          "provenance": {
+            "agent": "creator",
+            "model": "default",
+            "challenged": false
+          }
+        },
+        {
+          "form": "καὶ",
+          "gloss": "and",
+          "lemma": "καί",
+          "pos": "conj",
+          "morphology": "indeclform (conj)",
+          "provenance": {
+            "agent": "referee",
+            "model": "default",
+            "challenged": true,
+            "decision": "accept-creator"
+          }
+        },
+        {
+          "form": "νόον",
+          "gloss": "mind",
+          "lemma": "νόος",
+          "pos": "noun",
+          "morphology": "masc acc sg (epic doric ionic)",
+          "provenance": {
+            "agent": "creator",
+            "model": "default",
+            "challenged": false
+          }
+        },
+        {
+          "form": "ἔγνω",
+          "gloss": "he-learned",
+          "lemma": "γιγνώσκω",
+          "pos": "verb",
+          "morphology": "aor ind act 3rd sg aorist active indicative",
+          "provenance": {
+            "agent": "creator",
+            "model": "default",
+            "challenged": false
+          }
+        }
+      ]
+    },
+    {
+      "reference": "1.4",
+      "greek": "πολλὰ δ᾽ ὅ γ᾽ ἐν πόντῳ πάθεν ἄλγεα ὃν κατὰ θυμόν,",
+      "words": [
+        {
+          "form": "πολλὰ",
+          "gloss": "many",
+          "lemma": "πολύς",
+          "pos": "adj",
+          "morphology": "fem dat sg (doric aeolic)",
+          "provenance": {
+            "agent": "referee",
+            "model": "default",
+            "challenged": true,
+            "decision": "accept-skeptic",
+            "creator_gloss": "many",
+            "skeptic_gloss": "many",
+            "reasoning": "Gloss 'many' is correct. Skeptic is right that the lemma should be πολύς (not Πόλλης) and morph is neut nom/acc pl. Gloss unchanged but metadata correction is valid."
+          }
+        },
+        {
+          "form": "δ᾽",
+          "gloss": "and",
+          "lemma": "δέ",
+          "pos": "particle",
+          "morphology": "",
+          "provenance": {
+            "agent": "creator",
+            "model": "default",
+            "challenged": false
+          }
+        },
+        {
+          "form": "ὅ",
+          "gloss": "he",
+          "lemma": "ὁ",
+          "pos": "pron",
+          "morphology": "masc nom sg",
+          "provenance": {
+            "agent": "referee",
+            "model": "default",
+            "challenged": true,
+            "decision": "accept-creator"
+          }
+        },
+        {
+          "form": "γ᾽",
+          "gloss": "[emphatic]",
+          "lemma": "γε",
+          "pos": "particle",
+          "morphology": "",
+          "provenance": {
+            "agent": "creator",
+            "model": "default",
+            "challenged": false
+          }
+        },
+        {
+          "form": "ἐν",
+          "gloss": "in",
+          "lemma": "ἐν",
+          "pos": "prep",
+          "morphology": "proclitic indeclform (prep)",
+          "provenance": {
+            "agent": "referee",
+            "model": "default",
+            "challenged": true,
+            "decision": "accept-skeptic",
+            "creator_gloss": "upon",
+            "skeptic_gloss": "on/in",
+            "reasoning": "ἐν + dative standardly means 'in' or 'on'. The translation's 'upon' reflects the whole phrase 'upon the sea', but as a standalone gloss for ἐν, 'in' is most standard. Skeptic is right about the lemma/morph errors."
+          }
+        },
+        {
+          "form": "πόντῳ",
+          "gloss": "sea",
+          "lemma": "πόντος",
+          "pos": "noun",
+          "morphology": "masc dat sg",
+          "provenance": {
+            "agent": "referee",
+            "model": "default",
+            "challenged": true,
+            "decision": "accept-skeptic",
+            "creator_gloss": "the-sea",
+            "skeptic_gloss": "sea",
+            "reasoning": "Embedding the article as 'the-sea' is inappropriate since there's no article in the Greek. Lemma should be πόντος (common noun). 'sea' is the correct gloss."
+          }
+        },
+        {
+          "form": "πάθεν",
+          "gloss": "suffered",
+          "lemma": "πάσχω",
+          "pos": "verb",
+          "morphology": "aor ind act 3rd sg (homeric ionic) aorist active indicative",
+          "provenance": {
+            "agent": "creator",
+            "model": "default",
+            "challenged": false
+          }
+        },
+        {
+          "form": "ἄλγεα",
+          "gloss": "woes",
+          "lemma": "ἄλγος",
+          "pos": "noun",
+          "morphology": "neut nom/voc/acc pl (epic ionic)",
+          "provenance": {
+            "agent": "creator",
+            "model": "default",
+            "challenged": false
+          }
+        },
+        {
+          "form": "ὃν",
+          "gloss": "his",
+          "lemma": "ὅς",
+          "pos": "pron",
+          "morphology": "masc acc sg",
+          "provenance": {
+            "agent": "referee",
+            "model": "default",
+            "challenged": true,
+            "decision": "accept-creator"
+          }
+        },
+        {
+          "form": "κατὰ",
+          "gloss": "in",
+          "lemma": "κατά",
+          "pos": "prep",
+          "morphology": "indeclform (prep)",
+          "provenance": {
+            "agent": "referee",
+            "model": "default",
+            "challenged": true,
+            "decision": "accept-neither",
+            "creator_gloss": "in",
+            "skeptic_gloss": "throughout",
+            "reasoning": "The Skeptic correctly identifies the broken lemma/morph metadata. However, for the gloss: κατὰ θυμόν is a fixed Homeric idiom meaning 'in his heart/spirit'. The Creator's 'in' actually works well here as a bare preposition gloss. The Skeptic's 'throughout' is possible but less natural in English for this idiom. 'in' is the best single-word gloss, matching the translation 'in his heart'. Keeping 'in' but for corrected reasons."
+          }
+        },
+        {
+          "form": "θυμόν",
+          "gloss": "heart",
+          "lemma": "θυμός",
+          "pos": "noun",
+          "morphology": "masc acc sg",
+          "provenance": {
+            "agent": "referee",
+            "model": "default",
+            "challenged": true,
+            "decision": "accept-skeptic",
+            "creator_gloss": "heart",
+            "skeptic_gloss": "heart",
+            "reasoning": "Gloss 'heart' is correct for θυμός (spirit/heart). Skeptic is right that the lemma should be θυμός (not θύμον 'thyme') and morph is masc acc sg."
+          }
+        }
+      ]
+    },
+    {
+      "reference": "1.5",
+      "greek": "ἀρνύμενος ἥν τε ψυχὴν καὶ νόστον ἑταίρων.",
+      "words": [
+        {
+          "form": "ἀρνύμενος",
+          "gloss": "seeking-to-win",
+          "lemma": "ἄρνυμαι",
+          "pos": "participle",
+          "morphology": "pres part mp masc nom sg present middle/passive",
+          "provenance": {
+            "agent": "creator",
+            "model": "default",
+            "challenged": false
+          }
+        },
+        {
+          "form": "ἥν",
+          "gloss": "his-own",
+          "lemma": "ὅς",
+          "pos": "pronoun",
+          "morphology": "fem acc sg (attic homeric ionic)",
+          "provenance": {
+            "agent": "referee",
+            "model": "default",
+            "challenged": true,
+            "decision": "accept-creator"
+          }
+        },
+        {
+          "form": "τε",
+          "gloss": "both",
+          "lemma": "τε",
+          "pos": "particle",
+          "morphology": "enclitic indeclform (particle)",
+          "provenance": {
+            "agent": "referee",
+            "model": "default",
+            "challenged": false,
+            "creator_gloss": "and",
+            "decision": "spot-check-fix",
+            "reasoning": "τε here is the first element of a τε...καί correlative pair ('both...and'). Glossing it as 'and' makes it indistinguishable from καί. 'Both' better represents the τε...καί construction: 'both his life and the return of his comrades.'"
+          }
+        },
+        {
+          "form": "ψυχὴν",
+          "gloss": "life",
+          "lemma": "ψυχή",
+          "pos": "noun",
+          "morphology": "fem acc sg (attic epic ionic)",
+          "provenance": {
+            "agent": "creator",
+            "model": "default",
+            "challenged": false
+          }
+        },
+        {
+          "form": "καὶ",
+          "gloss": "and",
+          "lemma": "καί",
+          "pos": "conj",
+          "morphology": "indeclform (conj)",
+          "provenance": {
+            "agent": "referee",
+            "model": "default",
+            "challenged": true,
+            "decision": "accept-creator"
+          }
+        },
+        {
+          "form": "νόστον",
+          "gloss": "return",
+          "lemma": "νόστος",
+          "pos": "noun",
+          "morphology": "masc acc sg",
+          "provenance": {
+            "agent": "creator",
+            "model": "default",
+            "challenged": false
+          }
+        },
+        {
+          "form": "ἑταίρων",
+          "gloss": "of-comrades",
+          "lemma": "ἑταῖρος",
+          "pos": "noun",
+          "morphology": "masc gen pl",
+          "provenance": {
+            "agent": "creator",
+            "model": "default",
+            "challenged": false
+          }
+        }
+      ]
+    }
+  ],
+  "mode": "agent"
+}

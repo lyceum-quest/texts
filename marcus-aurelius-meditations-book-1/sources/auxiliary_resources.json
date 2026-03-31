@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "kind": "auxiliary",
+  "generated_at": "2026-03-23T09:00:00Z",
+  "candidates": [
+    {
+      "id": "internet-archive-leopold",
+      "title": "M. Antoninus Imperator Ad Se Ipsum (Leopold 1908 source edition)",
+      "type": "source-edition-scan",
+      "url": "https://archive.org/details/mantoninusimpera00marcuoft/page/n6",
+      "description": "Internet Archive scan of the Leopold 1908 Teubner edition used by Perseus",
+      "quality_notes": "Page images of the print source. Note: Perseus indicates some pages are missing in this scan. HathiTrust alternative: https://hdl.handle.net/2027/uc1.b3218103",
+      "confidence_notes": "Reference value: useful for verification but Perseus TEI is primary source",
+      "recommended": false,
+      "rank": 2,
+      "notes": "Fallback for verification only; Perseus XML is preferred"
+    },
+    {
+      "id": "treebank-search",
+      "title": "Treebank availability search",
+      "type": "treebank",
+      "url": null,
+      "description": "No treebank data found for Marcus Aurelius Meditations in Perseus AGDT2 or PROIEL",
+      "quality_notes": "Marcus Aurelius (Imperial-era philosophical prose) is not covered in existing Ancient Greek treebank projects, which focus on Classical authors and New Testament Greek",
+      "confidence_notes": "Confirmed absence: checked Perseus treebank_data and PROIEL repositories",
+      "recommended": false,
+      "rank": null,
+      "notes": "Morphological analysis will need to rely on computational tools (morpheus, greek-nlp-toolkit) rather than gold-standard treebank annotations"
+    },
+    {
+      "id": "loeb-haines-search",
+      "title": "C.R. Haines Loeb translation (1916) search",
+      "type": "translation",
+      "url": null,
+      "description": "Loeb Classical Library translation by C.R. Haines (1916) not readily found in digital form",
+      "quality_notes": "Published 1916, should be public domain in US (pre-1928) but not found in Gutenberg or other standard repositories. May require library access.",
+      "confidence_notes": "Not available: not found in standard PD repositories; Long translation is superior choice anyway",
+      "recommended": false,
+      "rank": null,
+      "notes": "Not pursued further; George Long (1862) is the preferred scholarly translation"
+    }
+  ]
+}

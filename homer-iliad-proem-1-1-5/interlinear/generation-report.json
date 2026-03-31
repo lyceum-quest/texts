@@ -1,0 +1,57 @@
+{
+  "workspace": "output/texts/homer-iliad-proem-1-1-5",
+  "completed_at": "2026-03-24T15:14:16Z",
+  "total_chapters": 1,
+  "succeeded": 1,
+  "failed": 0,
+  "total_words": 30,
+  "total_cost_usd": 0.248784,
+  "total_wall_seconds": 94.9,
+  "seconds_per_word": 3.16,
+  "chapters": [
+    {
+      "chapter": 1,
+      "status": "ok",
+      "exit_code": 0,
+      "wall_seconds": 94.9,
+      "summary": {
+        "run_id": "2026-03-24T15:12:41Z-homer-iliad-proem-1-1-5-1",
+        "text": "homer-iliad-proem-1-1-5",
+        "book": 1,
+        "range": "book 1",
+        "started_at": "2026-03-24T15:12:41Z",
+        "completed_at": "2026-03-24T15:14:15Z",
+        "elapsed_seconds": 94.0,
+        "seconds_per_word": 3.13,
+        "total_latency_ms": 94006,
+        "creator_model": "claude-sonnet-4-20250514",
+        "skeptic_model": "claude-sonnet-4-20250514",
+        "referee_model": "claude-opus-4-20250514",
+        "total_words": 30,
+        "total_batches": 5,
+        "total_input_tokens": 10187,
+        "total_output_tokens": 4721,
+        "total_cost_usd": 0.248784,
+        "cost_per_word_usd": 0.008293,
+        "total_challenges": 7,
+        "challenge_rate": 0.2333,
+        "failed_call_count": 0,
+        "model_breakdown": {
+          "claude-sonnet-4-20250514": {
+            "calls": 10,
+            "input_tokens": 6978,
+            "output_tokens": 2906,
+            "cost_usd": 0.064524
+          },
+          "claude-opus-4-20250514": {
+            "calls": 5,
+            "input_tokens": 3209,
+            "output_tokens": 1815,
+            "cost_usd": 0.18426
+          }
+        },
+        "benchmark_score": null
+      }
+    }
+  ]
+}

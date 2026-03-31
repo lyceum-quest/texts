@@ -1,0 +1,37 @@
+{
+  "schema_version": 2,
+  "work": "aesop-fable-150",
+  "generated_at": "2026-03-23T17:30:00Z",
+  "witnesses": [
+    {
+      "id": "jones-1912",
+      "title": "Vernon Jones (1912)",
+      "translator": "V. S. Vernon Jones",
+      "year": 1912,
+      "license": "Public Domain",
+      "file": "jones-1912.txt",
+      "format": "prose",
+      "roles": [
+        "adversarial-comparison",
+        "glossing-reference",
+        "reader-display"
+      ],
+      "literalness": "moderately literal",
+      "url": "https://www.gutenberg.org/ebooks/11339",
+      "publisher": "Project Gutenberg",
+      "segment_count": 2,
+      "notes": "Primary witness. Widely-accessible 1912 translation. Literal in content but presented as flowing prose without reference markers. Combines Greek sentences (150.1-150.3) into narrative paragraph, simplifies moral (150.4) to 'Be content with your lot'. Excellent for adversarial comparison due to literal vocabulary and natural English style. Good glossing reference. Suitable for reader display as literary alternative. NOT versification-candidate: lacks native reference markers, structural granularity (2 paragraphs vs 5 Greek segments) requires forced segmentation which violates pipeline policy. Stage 6a generation required."
+    }
+  ],
+  "summary": {
+    "total_witnesses": 1,
+    "versification_candidates": 0,
+    "adversarial_comparison_witnesses": 1,
+    "glossing_reference_witnesses": 1,
+    "reader_display_witnesses": 1,
+    "recommended_versification": null,
+    "stage_5_complete": true,
+    "stage_6_ready": true,
+    "notes": "No versification candidates available - Jones translation lacks native reference markers. Stage 6a generation required to produce verse-aligned English."
+  }
+}

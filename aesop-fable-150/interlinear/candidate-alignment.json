@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-03-23T17:10:16Z",
+  "strategy": "morphology-fallback",
+  "evidence_sources": [
+    "interlinear/transliteration.json",
+    "versification/alignment.json",
+    "witnesses/source.json",
+    "interlinear/treebank-constraints.json"
+  ],
+  "provider_notes": [
+    "treebank provider loaded: 0 exact-reference entrie(s)",
+    "treebank provider token count: 0",
+    "treebank provider validation note count: 2",
+    "ground-truth provider not available; builder will leave non-provider glosses unresolved unless other evidence exists"
+  ],
+  "segments": [],
+  "unresolved_flags": [
+    "no versification mappings available for Stage 8 build"
+  ]
+}

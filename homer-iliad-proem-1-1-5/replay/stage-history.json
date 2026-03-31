@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "events": [
+    {
+      "at": "2026-03-24T15:02:30Z",
+      "stage": "0-intake",
+      "action": "workspace_initialized",
+      "profile": "add",
+      "affected_stages": [
+        "0-intake",
+        "1-source-discovery",
+        "2-acquisition-extraction",
+        "3-cleaning-normalization",
+        "4-structural-segmentation",
+        "5-witness-normalization-ranking",
+        "6-versification-alignment",
+        "7-transliteration",
+        "8-interlinear-morphology",
+        "9-reader-reliability",
+        "10-human-review"
+      ],
+      "notes": "Created canonical text-pipeline workspace."
+    },
+    {
+      "at": "2026-03-24T15:08:40Z",
+      "stage": "7-transliteration",
+      "action": "transliteration_ran",
+      "profile": "add",
+      "affected_stages": [
+        "7-transliteration"
+      ],
+      "notes": "no structured Greek lines available for transliteration"
+    },
+    {
+      "at": "2026-03-24T15:09:39Z",
+      "stage": "7-transliteration",
+      "action": "transliteration_ran",
+      "profile": "add",
+      "affected_stages": [
+        "7-transliteration"
+      ],
+      "notes": "generated 5 transliteration line(s) with lyceum-greek-latin-v1"
+    }
+  ]
+}

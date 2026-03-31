@@ -1,0 +1,18 @@
+[
+  {
+    "id": "murray-1924",
+    "title": "Homer, The Iliad (English translation)",
+    "source": "Perseus Digital Library",
+    "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0134",
+    "license": "Public Domain",
+    "format": "text",
+    "language": "eng",
+    "translator": "A.T. Murray",
+    "year": 1924,
+    "coverage": "Lines 1.1-1.5",
+    "quality": "literal prose translation, good for alignment",
+    "recommended": true,
+    "role": "versification-candidate",
+    "notes": "Murray's Loeb translation is literal and maps well to Greek verse structure."
+  }
+]

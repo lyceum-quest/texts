@@ -1,0 +1,17 @@
+{
+  "witnesses": [
+    {
+      "id": "murray-1924",
+      "title": "The Iliad (A.T. Murray, 1924)",
+      "translator": "A.T. Murray",
+      "year": 1924,
+      "license": "Public Domain",
+      "source": "Perseus Digital Library",
+      "language": "eng",
+      "role": "versification-candidate",
+      "file": "murray-1924.txt",
+      "quality": "literal prose, good for alignment",
+      "provenance": "Loeb Classical Library edition via Perseus"
+    }
+  ]
+}

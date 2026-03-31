@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "kind": "auxiliary",
+  "generated_at": "2026-03-23T17:00:00Z",
+  "candidates": [
+    {
+      "id": "perry-index",
+      "title": "Perry Index of Aesopic Fables",
+      "type": "reference-system",
+      "url": "https://en.wikipedia.org/wiki/Perry_Index",
+      "description": "Standard numbering system for Aesopic fables",
+      "format": "reference",
+      "usefulness": "critical for cross-referencing fable numbering between editions",
+      "notes": "Need to map Chambry 150 to Perry number to identify fable across sources"
+    },
+    {
+      "id": "perseus-morphology",
+      "title": "Perseus Morphological Analysis",
+      "type": "morphology",
+      "url": "http://www.perseus.tufts.edu/hopper/",
+      "description": "Word-by-word morphological parsing for Greek text",
+      "format": "api-html",
+      "usefulness": "can provide morphology for individual words if treebank unavailable",
+      "notes": "Perseus provides click-through morphology on their texts"
+    },
+    {
+      "id": "aesop-commentary",
+      "title": "Aesopic Fables Commentary and Scholarship",
+      "type": "commentary",
+      "url": "various",
+      "description": "Modern commentary on Aesop's fables",
+      "format": "various",
+      "usefulness": "contextual understanding, historical variants",
+      "notes": "May help understand textual variants and numbering discrepancies"
+    },
+    {
+      "id": "loeb-classical-library",
+      "title": "Babrius and Phaedrus (Loeb Classical Library)",
+      "type": "parallel-text",
+      "url": "https://www.loebclassics.com/",
+      "description": "Verse versions of Aesopic fables by Babrius (Greek) and Phaedrus (Latin)",
+      "format": "print-digital",
+      "usefulness": "parallel versification of same fables",
+      "notes": "Copyright restricted but may provide structural insights. Not for direct use."
+    },
+    {
+      "id": "ancient-greek-tutorials",
+      "title": "Ancient Greek Tutorials - Aesop Resources",
+      "type": "pedagogical",
+      "url": "various educational sites",
+      "description": "Educational resources using Aesop for Greek learning",
+      "format": "web",
+      "usefulness": "may have simplified or annotated versions",
+      "notes": "Useful for understanding common pedagogical approaches"
+    },
+    {
+      "id": "fable-title-index",
+      "title": "Aesop Fable Title Index",
+      "type": "reference",
+      "url": "https://mythfolklore.net/aesopica/",
+      "description": "Cross-reference of fable titles and numbers across editions",
+      "format": "web",
+      "usefulness": "essential for identifying which fable is Chambry 150",
+      "notes": "Laura Gibbs maintains comprehensive Aesop resources with cross-references"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-03-23T18:00:00Z",
+  "method": "translation-synthesis",
+  "model": "claude-sonnet-4-20250514",
+  "witness_used": "Vernon Jones (1912)",
+  "source_greek": "structured/greek.json",
+  "segment_count": 5,
+  "notes": [
+    "Structure-preserving translation generated for Aesop Fable 150",
+    "Each English segment corresponds 1:1 with Greek segment",
+    "Adversarial comparison performed against Vernon Jones (1912) witness",
+    "Translation faithful to Greek meaning while maintaining natural English"
+  ]
+}

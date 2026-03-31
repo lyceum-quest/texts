@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-03-24T15:09:39Z",
+  "standard": "lyceum-greek-latin-v1",
+  "lines": [
+    {
+      "ref": "1.1",
+      "greek": "μῆνιν ἄειδε θεὰ Πηληϊάδεω Ἀχιλῆος",
+      "transliteration": "mēnin aeide thea Pēlēiadeō Achilēos"
+    },
+    {
+      "ref": "1.2",
+      "greek": "οὐλομένην, ἣ μυρί᾽ Ἀχαιοῖς ἄλγε᾽ ἔθηκε,",
+      "transliteration": "oulomenēn, hē muri᾽ Achaiois alge᾽ ethēke,"
+    },
+    {
+      "ref": "1.3",
+      "greek": "πολλὰς δ᾽ ἰφθίμους ψυχὰς Ἄϊδι προΐαψεν",
+      "transliteration": "pollas d᾽ iphthimous psuchas Aidi proiapsen"
+    },
+    {
+      "ref": "1.4",
+      "greek": "ἡρώων, αὐτοὺς δὲ ἑλώρια τεῦχε κύνεσσιν",
+      "transliteration": "hērōōn, autous de helōria teuche kunessin"
+    },
+    {
+      "ref": "1.5",
+      "greek": "οἰωνοῖσί τε πᾶσι, Διὸς δ᾽ ἐτελείετο βουλή,",
+      "transliteration": "oiōnoisi te pasi, Dios d᾽ eteleieto boulē,"
+    }
+  ]
+}

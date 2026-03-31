@@ -1,0 +1,55 @@
+{
+  "schema_version": 2,
+  "work": "marcus-aurelius-meditations-book-1",
+  "generated_at": "2026-03-23T09:15:00Z",
+  "witnesses": [
+    {
+      "id": "long-1862",
+      "title": "Long (1862)",
+      "translator": "George Long",
+      "year": 1862,
+      "license": "Public Domain",
+      "file": "long-1862.json",
+      "format": "structured-json",
+      "roles": [
+        "versification-candidate",
+        "adversarial-comparison",
+        "reader-display"
+      ],
+      "literalness": "highly literal",
+      "url": "https://standardebooks.org/ebooks/marcus-aurelius/meditations/george-long",
+      "publisher": "Standard Ebooks (modern edition)",
+      "segment_count": 17,
+      "notes": "Primary witness. Most widely-used scholarly translation. Modern, clear English with excellent structural alignment to Greek text. Designed for study alongside Greek. Each section corresponds 1:1 with Greek sections (1.1-1.17). Highly suitable as versification candidate due to: (1) native section-based reference system matching Greek, (2) 17 segments matching Greek exactly (100% alignment), (3) literal translation suitable for learner use, (4) public domain, (5) complete coverage."
+    },
+    {
+      "id": "casaubon-1634",
+      "title": "Casaubon (1634)",
+      "translator": "Meric Casaubon",
+      "year": 1634,
+      "license": "Public Domain",
+      "file": "casaubon-1634.json",
+      "format": "structured-json",
+      "roles": [
+        "adversarial-comparison",
+        "glossing-reference",
+        "reader-display"
+      ],
+      "literalness": "moderately literal",
+      "url": "https://www.gutenberg.org/cache/epub/2680/pg2680.txt",
+      "publisher": "Project Gutenberg",
+      "segment_count": 17,
+      "notes": "Secondary witness. First English translation of Meditations (1634). Archaic Early Modern English style (\"shamefastness\", \"manlike behaviour\"). Useful for adversarial comparison due to different translation tradition and vocabulary choices. Good glossing reference for understanding range of English equivalents for Greek terms. Display witness providing historical perspective. Structurally complete with 17 sections matching Greek, but archaic style makes it unsuitable as primary versification candidate."
+    }
+  ],
+  "summary": {
+    "total_witnesses": 2,
+    "versification_candidates": 1,
+    "adversarial_comparison_witnesses": 2,
+    "glossing_reference_witnesses": 1,
+    "reader_display_witnesses": 2,
+    "recommended_versification": "long-1862",
+    "stage_5_complete": true,
+    "stage_6_ready": true
+  }
+}

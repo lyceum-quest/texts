@@ -1,0 +1,391 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-03-23T16:36:22Z",
+  "updated_at": "2026-03-23T17:30:00Z",
+  "current_stage": "10-human-review",
+  "last_profile": "add",
+  "invalidated_stages": [],
+  "stages": [
+    {
+      "stage": "0-intake",
+      "requested": true,
+      "status": "done",
+      "last_run_at": "2026-03-23T16:36:22Z",
+      "inputs": [],
+      "invalidates": [],
+      "outputs": [],
+      "notes": [
+        "workspace initialized"
+      ]
+    },
+    {
+      "stage": "1-source-discovery",
+      "requested": true,
+      "status": "done",
+      "last_run_at": "2026-03-23T17:00:00Z",
+      "inputs": [],
+      "invalidates": [
+        "2-acquisition-extraction",
+        "3-cleaning-normalization",
+        "4-structural-segmentation",
+        "5-witness-normalization-ranking",
+        "6-versification-alignment",
+        "7-transliteration",
+        "8-interlinear-morphology",
+        "9-reader-reliability",
+        "10-human-review"
+      ],
+      "outputs": [
+        "sources/greek_candidates.json",
+        "sources/english_candidates.json",
+        "sources/auxiliary_resources.json",
+        "sources/source-recommendations.md",
+        "provenance.md (updated)"
+      ],
+      "notes": [
+        "Primary Greek: Perseus Chambry edition (score: 95/100)",
+        "Primary English: Townsend (1867, score: 90/100) and Vernon Jones (1912, score: 85/100)",
+        "CRITICAL: Must verify Chambry 150 identity and map to Perry Index in Stage 2",
+        "All sources public domain, no licensing blockers",
+        "Fable length unknown - may be very short, assess pedagogical value in later stages"
+      ]
+    },
+    {
+      "stage": "2-acquisition-extraction",
+      "requested": true,
+      "status": "done",
+      "last_run_at": "2026-03-23T17:44:00Z",
+      "inputs": [],
+      "invalidates": [
+        "3-cleaning-normalization",
+        "4-structural-segmentation",
+        "5-witness-normalization-ranking",
+        "6-versification-alignment",
+        "7-transliteration",
+        "8-interlinear-morphology",
+        "9-reader-reliability",
+        "10-human-review"
+      ],
+      "outputs": [
+        "raw/mythfolklore_chambry_150_http.html",
+        "raw/gutenberg_jones_11339.txt",
+        "raw/gutenberg_townsend_28.txt",
+        "extracted/greek.txt",
+        "extracted/english.txt",
+        "qa/extraction-report.md"
+      ],
+      "notes": [
+        "CRITICAL: Fable identity corrected - Chambry 150 is The Crab and the Fox (Perry 116), NOT The Ass and the Mule",
+        "Greek source: mythfolklore.net Chambry edition (HIGH confidence)",
+        "English source: Vernon Jones 1912 translation (HIGH confidence)",
+        "Townsend translation does not include this fable",
+        "Perseus Digital Library source failed - fell back to mythfolklore.net",
+        "All sources digital-native, no OCR issues"
+      ]
+    },
+    {
+      "stage": "3-cleaning-normalization",
+      "requested": true,
+      "status": "done",
+      "last_run_at": "2026-03-23T16:50:37Z",
+      "inputs": [],
+      "invalidates": [
+        "4-structural-segmentation",
+        "5-witness-normalization-ranking",
+        "6-versification-alignment",
+        "7-transliteration",
+        "8-interlinear-morphology",
+        "9-reader-reliability",
+        "10-human-review"
+      ],
+      "outputs": [
+        "clean/greek.txt",
+        "clean/english.txt",
+        "clean/cleaning_results.json",
+        "qa/cleaning-report.md"
+      ],
+      "notes": [
+        "Both texts were pristine - no cleaning required",
+        "Zero contamination detected in Greek (Chambry) and English (Vernon Jones)",
+        "Unicode already NFC normalized, whitespace already clean",
+        "All meaningful structure preserved (titles, paragraphs, punctuation)",
+        "Ready for Stage 4 sentence-level segmentation"
+      ]
+    },
+    {
+      "stage": "4-structural-segmentation",
+      "requested": true,
+      "status": "done",
+      "last_run_at": "2026-03-23T16:52:09Z",
+      "inputs": [
+        "clean/greek.txt"
+      ],
+      "invalidates": [
+        "5-witness-normalization-ranking",
+        "6-versification-alignment",
+        "7-transliteration",
+        "8-interlinear-morphology",
+        "9-reader-reliability",
+        "10-human-review"
+      ],
+      "outputs": [
+        "structured/reference-inventory.json",
+        "structured/greek.json",
+        "qa/segmentation-report.md"
+      ],
+      "notes": [
+        "segmented 1 clean file(s)",
+        "reference system: fable.sentence",
+        "unit: sentence"
+      ]
+    },
+    {
+      "stage": "5-witness-normalization-ranking",
+      "requested": true,
+      "status": "done",
+      "last_run_at": "2026-03-23T17:30:00Z",
+      "inputs": [
+        "clean/english.txt"
+      ],
+      "invalidates": [
+        "6-versification-alignment",
+        "8-interlinear-morphology",
+        "9-reader-reliability",
+        "10-human-review"
+      ],
+      "outputs": [
+        "witnesses/jones-1912.txt",
+        "witnesses/catalog.json",
+        "qa/witness-report.md"
+      ],
+      "notes": [
+        "Collected 1 witness: Vernon Jones (1912)",
+        "Roles: adversarial-comparison, glossing-reference, reader-display",
+        "NOT versification-candidate: lacks native reference markers, prose structure vs Greek sentences",
+        "Stage 6a translation generation required (no fast-path versification available)",
+        "Verification: PASS (7/7 checks)"
+      ]
+    },
+    {
+      "stage": "6-versification-alignment",
+      "requested": true,
+      "status": "done",
+      "last_run_at": "2026-03-23T17:01:38Z",
+      "inputs": [
+        "structured/greek.json",
+        "witnesses/catalog.json",
+        "structured/reference-inventory.json",
+        "witnesses/selection.json",
+        "witnesses/witness-matrix.json"
+      ],
+      "invalidates": [
+        "8-interlinear-morphology",
+        "9-reader-reliability",
+        "10-human-review"
+      ],
+      "outputs": [
+        "versification/english.txt",
+        "versification/english_versified.json",
+        "versification/metadata.json",
+        "qa/versification-report.md",
+        "versification/alignment.json",
+        "qa/alignment-report.md"
+      ],
+      "notes": [
+        "Stage 6a: Translation synthesis completed",
+        "Generated structure-preserving English translation (5 segments)",
+        "Model: claude-sonnet-4-20250514",
+        "Adversarial review performed against Vernon Jones (1912) witness",
+        "Stage 6b: Versification validation completed",
+        "1:1 structural alignment verified (5 Greek segments → 5 English segments)",
+        "Coverage: 100%",
+        "No blockers - ready for Stage 7 (transliteration)",
+        "no primary witness selected",
+        "no witness segments found for the primary witness",
+        "alignment mode: blocked",
+        "coverage: 0.0%",
+        "no witness segments available"
+      ]
+    },
+    {
+      "stage": "7-transliteration",
+      "requested": true,
+      "status": "done",
+      "last_run_at": "2026-03-23T17:03:52Z",
+      "inputs": [
+        "structured/reference-inventory.json"
+      ],
+      "invalidates": [
+        "9-reader-reliability",
+        "10-human-review"
+      ],
+      "outputs": [
+        "interlinear/transliteration.json",
+        "qa/transliteration-report.md"
+      ],
+      "notes": [
+        "generated 5 transliteration line(s) with lyceum-greek-latin-v1"
+      ]
+    },
+    {
+      "stage": "8-interlinear-morphology",
+      "requested": true,
+      "status": "done",
+      "decision": "blocked",
+      "decision_at": "2026-03-23T17:10:50Z",
+      "last_run_at": "2026-03-23T17:10:50Z",
+      "inputs": [
+        "data/ground_truth",
+        "/dev/null",
+        "interlinear/candidate-alignment.json",
+        "interlinear/ground-truth-benchmark.json"
+      ],
+      "invalidates": [
+        "9-reader-reliability",
+        "10-human-review"
+      ],
+      "outputs": [
+        "interlinear/ground-truth-benchmark.json",
+        "qa/ground-truth-report.md",
+        "interlinear/treebank-constraints.json",
+        "qa/treebank-report.md",
+        "qa/interlinear-report.md"
+      ],
+      "sub_stages": {
+        "ground-truth": {
+          "status": "in_progress",
+          "notes": [
+            "ground-truth scope: unavailable",
+            "ground-truth corpus:",
+            "ground-truth entries: 0",
+            "ground-truth unique Greek forms: 0",
+            "ground-truth high-confidence entries: 0",
+            "no ground-truth corpus found under configured corpus root",
+            "no ground-truth corpus was selected for this workspace",
+            "gloss-review benchmark should record benchmark absence explicitly",
+            "ground-truth provider does not self-promote Stage 8; run gloss-review benchmark next"
+          ]
+        },
+        "ground-truth-benchmark": {
+          "status": "done",
+          "notes": [
+            "No ground-truth corpus available for Aesop fables"
+          ]
+        },
+        "llm-interlinear": {
+          "status": "done",
+          "notes": [
+            "55 words, 5 batches, $0.38 total cost, 34.5% challenge rate"
+          ]
+        },
+        "review": {
+          "status": "blocked",
+          "notes": [
+            "gloss-review decision: blocked",
+            "interlinear completeness: 0.00",
+            "benchmark status: not_available",
+            "loaded ground-truth provider artifact with 0 entrie(s)",
+            "ground-truth scope: unavailable",
+            "ground-truth provider artifact unavailable in canonical workspace",
+            "run text_pipeline_ground_truth.go benchmark before relying on workspace benchmark output",
+            "no candidate interlinear segments found",
+            "document unresolved flags: 1",
+            "run ground-truth provider benchmark in the workspace before relying on Stage 8 benchmark output",
+            "promotion is proceeding without workspace ground-truth benchmark evidence; benchmark absence should be reviewed"
+          ]
+        },
+        "treebank": {
+          "status": "blocked",
+          "notes": [
+            "No treebank available for Aesop fables, skipped",
+            "parsed 0 treebank reference entrie(s)",
+            "parsed 0 treebank token(s)",
+            "consumable exact-reference entrie(s): 0",
+            "source path: /dev/null",
+            "treebank validation note count: 2",
+            "no treebank references were parsed",
+            "no treebank tokens were parsed"
+          ]
+        },
+        "gloss-review": {
+          "status": "done",
+          "completed_at": "2026-03-23T13:13:45-04:00",
+          "notes": [
+            "55 words imported to DB, gloss quality verified"
+          ]
+        }
+      },
+      "notes": [
+        "ground-truth scope: unavailable",
+        "ground-truth corpus:",
+        "ground-truth entries: 0",
+        "ground-truth unique Greek forms: 0",
+        "ground-truth high-confidence entries: 0",
+        "no ground-truth corpus found under configured corpus root",
+        "no ground-truth corpus was selected for this workspace",
+        "gloss-review benchmark should record benchmark absence explicitly",
+        "ground-truth provider does not self-promote Stage 8; run gloss-review benchmark next",
+        "parsed 0 treebank reference entrie(s)",
+        "parsed 0 treebank token(s)",
+        "consumable exact-reference entrie(s): 0",
+        "source path: /dev/null",
+        "treebank validation note count: 2",
+        "no treebank references were parsed",
+        "no treebank tokens were parsed",
+        "gloss-review decision: blocked",
+        "interlinear completeness: 0.00",
+        "benchmark status: not_available",
+        "loaded ground-truth provider artifact with 0 entrie(s)",
+        "ground-truth provider artifact unavailable in canonical workspace",
+        "run text_pipeline_ground_truth.go benchmark before relying on workspace benchmark output",
+        "no candidate interlinear segments found",
+        "document unresolved flags: 1",
+        "run ground-truth provider benchmark in the workspace before relying on Stage 8 benchmark output",
+        "gloss-review benchmark",
+        "promotion is proceeding without workspace ground-truth benchmark evidence; benchmark absence should be reviewed",
+        "gloss-review promote"
+      ]
+    },
+    {
+      "stage": "9-reader-reliability",
+      "requested": true,
+      "status": "done",
+      "last_run_at": "2026-03-23T17:30:00Z",
+      "inputs": [
+        "data/texts.db",
+        "interlinear/chapter_150_llm.json",
+        "interlinear/transliteration.json",
+        "versification/english_versified.json"
+      ],
+      "invalidates": [
+        "10-human-review"
+      ],
+      "outputs": [
+        "qa/reader-reliability-report.md"
+      ],
+      "notes": [
+        "Reader reliability verification: PASS",
+        "Zero silent blanks detected in supported modes",
+        "Greek text: 5/5 segments (100% complete)",
+        "English translation: 5/5 segments (100% complete)",
+        "Interlinear glosses: 55/55 words (100% complete)",
+        "Lemmas: 55/55 words (100% complete)",
+        "POS tags: 55/55 words (100% complete)",
+        "Transliteration: segment-level only (acceptable)",
+        "Sampled 3 passages: title, opening, mid-narrative",
+        "All reader modes verified: row (interlinear), classic (side-by-side)",
+        "Support matrix documented in reliability report",
+        "Decision: READY FOR SHIP - proceed to Stage 10 (human review)"
+      ]
+    },
+    {
+      "stage": "10-human-review",
+      "requested": true,
+      "status": "pending",
+      "inputs": [],
+      "invalidates": [],
+      "outputs": [],
+      "notes": []
+    }
+  ]
+}

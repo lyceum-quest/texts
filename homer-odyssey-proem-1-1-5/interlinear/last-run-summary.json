@@ -1,0 +1,32 @@
+{
+  "run_id": "2026-03-29T02:14:29Z-homer-odyssey-proem-1-1-5-1",
+  "text": "homer-odyssey-proem-1-1-5",
+  "book": 1,
+  "range": "book 1",
+  "started_at": "2026-03-29T02:14:29Z",
+  "completed_at": "2026-03-29T02:17:39Z",
+  "elapsed_seconds": 190.0,
+  "seconds_per_word": 4.75,
+  "total_latency_ms": 189750,
+  "creator_model": "claude-sonnet-4-20250514",
+  "skeptic_model": "claude-sonnet-4-20250514",
+  "referee_model": "claude-opus-4-20250514",
+  "total_words": 40,
+  "total_batches": 5,
+  "total_input_tokens": 26608,
+  "total_output_tokens": 10374,
+  "total_cost_usd": 0.39239,
+  "cost_per_word_usd": 0.00981,
+  "total_challenges": 20,
+  "challenge_rate": 0.5,
+  "failed_call_count": 0,
+  "model_breakdown": {
+    "claude-opus-4-6": {
+      "calls": 15,
+      "input_tokens": 26608,
+      "output_tokens": 10374,
+      "cost_usd": 0.39239
+    }
+  },
+  "benchmark_score": null
+}

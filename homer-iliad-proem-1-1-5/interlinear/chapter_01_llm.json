@@ -1,0 +1,429 @@
+{
+  "greek_edition": "workspace:homer-iliad-proem-1-1-5",
+  "english_edition": "chapter_1.json",
+  "text": "homer-iliad-proem-1-1-5",
+  "book": 1,
+  "run_id": "2026-03-24T15:12:41Z-homer-iliad-proem-1-1-5-1",
+  "generator": "llm-interlinear-v1",
+  "segments": [
+    {
+      "reference": "1.1",
+      "greek": "μῆνιν ἄειδε θεὰ Πηληϊάδεω Ἀχιλῆος",
+      "words": [
+        {
+          "form": "μῆνιν",
+          "gloss": "wrath",
+          "lemma": "μῆνις",
+          "pos": "noun",
+          "morphology": "fem acc sg",
+          "provenance": {
+            "agent": "creator",
+            "model": "claude-sonnet-4-20250514",
+            "challenged": false
+          }
+        },
+        {
+          "form": "ἄειδε",
+          "gloss": "sing",
+          "lemma": "ἀείδω",
+          "pos": "verb",
+          "morphology": "imperf ind act 3rd sg (epic doric ionic aeolic) imperfect active indicative",
+          "provenance": {
+            "agent": "referee",
+            "model": "claude-opus-4-20250514",
+            "challenged": true,
+            "decision": "accept-skeptic",
+            "creator_gloss": "sing",
+            "skeptic_gloss": "sing",
+            "reasoning": "The form is aorist imperative 2nd singular (ἄειδε < ἀείδω), not imperfect indicative. The translation confirms this is a command to the goddess."
+          }
+        },
+        {
+          "form": "θεὰ",
+          "gloss": "goddess",
+          "lemma": "θέα",
+          "pos": "noun",
+          "morphology": "fem dat sg (attic doric ionic aeolic)",
+          "provenance": {
+            "agent": "referee",
+            "model": "claude-opus-4-20250514",
+            "challenged": true,
+            "decision": "accept-creator"
+          }
+        },
+        {
+          "form": "Πηληϊάδεω",
+          "gloss": "of-Peleus'-son",
+          "lemma": "Πηληϊάδης",
+          "pos": "noun",
+          "morphology": "masc gen sg (epic ionic)",
+          "provenance": {
+            "agent": "creator",
+            "model": "claude-sonnet-4-20250514",
+            "challenged": false
+          }
+        },
+        {
+          "form": "Ἀχιλῆος",
+          "gloss": "of-Achilles",
+          "lemma": "Ἀχιλλεύς",
+          "pos": "noun",
+          "morphology": "",
+          "provenance": {
+            "agent": "creator",
+            "model": "claude-sonnet-4-20250514",
+            "challenged": false
+          }
+        }
+      ]
+    },
+    {
+      "reference": "1.2",
+      "greek": "οὐλομένην, ἣ μυρί᾽ Ἀχαιοῖς ἄλγε᾽ ἔθηκε,",
+      "words": [
+        {
+          "form": "οὐλομένην",
+          "gloss": "destructive",
+          "lemma": "οὐλόμενος",
+          "pos": "noun",
+          "morphology": "fem acc sg (attic epic ionic)",
+          "provenance": {
+            "agent": "creator",
+            "model": "claude-sonnet-4-20250514",
+            "challenged": false
+          }
+        },
+        {
+          "form": "ἣ",
+          "gloss": "which",
+          "lemma": "ὁ",
+          "pos": "noun",
+          "morphology": "fem nom/voc sg",
+          "provenance": {
+            "agent": "creator",
+            "model": "claude-sonnet-4-20250514",
+            "challenged": false
+          }
+        },
+        {
+          "form": "μυρί᾽",
+          "gloss": "ten-thousand",
+          "lemma": "μυρίος",
+          "pos": "adjective",
+          "morphology": "",
+          "provenance": {
+            "agent": "referee",
+            "model": "claude-opus-4-20250514",
+            "challenged": false,
+            "creator_gloss": "countless",
+            "decision": "spot-check-fix",
+            "reasoning": "μυρίος literally means 'ten thousand' or 'myriad'. While 'countless' captures the sense, the literal gloss should be 'ten-thousand' or 'myriad'"
+          }
+        },
+        {
+          "form": "Ἀχαιοῖς",
+          "gloss": "upon-the-Achaeans",
+          "lemma": "Ἀχαιός",
+          "pos": "noun",
+          "morphology": "",
+          "provenance": {
+            "agent": "creator",
+            "model": "claude-sonnet-4-20250514",
+            "challenged": false
+          }
+        },
+        {
+          "form": "ἄλγε᾽",
+          "gloss": "woes",
+          "lemma": "ἄλγος",
+          "pos": "noun",
+          "morphology": "",
+          "provenance": {
+            "agent": "creator",
+            "model": "claude-sonnet-4-20250514",
+            "challenged": false
+          }
+        },
+        {
+          "form": "ἔθηκε",
+          "gloss": "placed",
+          "lemma": "τίθημι",
+          "pos": "verb",
+          "morphology": "aor ind act 3rd sg aorist active indicative",
+          "provenance": {
+            "agent": "referee",
+            "model": "claude-opus-4-20250514",
+            "challenged": true,
+            "decision": "accept-skeptic",
+            "creator_gloss": "brought",
+            "skeptic_gloss": "placed",
+            "reasoning": "τίθημι aorist means 'placed/set/put'. While 'brought' works in English translation, the Greek verb specifically means to place or set something, not to carry/bring it."
+          }
+        }
+      ]
+    },
+    {
+      "reference": "1.3",
+      "greek": "πολλὰς δ᾽ ἰφθίμους ψυχὰς Ἄϊδι προΐαψεν",
+      "words": [
+        {
+          "form": "πολλὰς",
+          "gloss": "many",
+          "lemma": "πολύς",
+          "pos": "adjective",
+          "morphology": "fem acc pl",
+          "provenance": {
+            "agent": "creator",
+            "model": "claude-sonnet-4-20250514",
+            "challenged": false
+          }
+        },
+        {
+          "form": "δ᾽",
+          "gloss": "and",
+          "lemma": "δέ",
+          "pos": "particle",
+          "morphology": "",
+          "provenance": {
+            "agent": "creator",
+            "model": "claude-sonnet-4-20250514",
+            "challenged": false
+          }
+        },
+        {
+          "form": "ἰφθίμους",
+          "gloss": "valiant",
+          "lemma": "ἴφθιμος",
+          "pos": "adjective",
+          "morphology": "masc acc pl",
+          "provenance": {
+            "agent": "creator",
+            "model": "claude-sonnet-4-20250514",
+            "challenged": false
+          }
+        },
+        {
+          "form": "ψυχὰς",
+          "gloss": "souls",
+          "lemma": "ψυχή",
+          "pos": "noun",
+          "morphology": "fem acc pl",
+          "provenance": {
+            "agent": "creator",
+            "model": "claude-sonnet-4-20250514",
+            "challenged": false
+          }
+        },
+        {
+          "form": "Ἄϊδι",
+          "gloss": "to-Hades",
+          "lemma": "Ἅιδης",
+          "pos": "noun",
+          "morphology": "masc dat sg",
+          "provenance": {
+            "agent": "creator",
+            "model": "claude-sonnet-4-20250514",
+            "challenged": false
+          }
+        },
+        {
+          "form": "προΐαψεν",
+          "gloss": "sent-forth",
+          "lemma": "προιάπτω",
+          "pos": "verb",
+          "morphology": "aor ind act 3rd sg (homeric ionic) aorist active indicative",
+          "provenance": {
+            "agent": "referee",
+            "model": "claude-opus-4-20250514",
+            "challenged": true,
+            "decision": "accept-creator"
+          }
+        }
+      ]
+    },
+    {
+      "reference": "1.4",
+      "greek": "ἡρώων, αὐτοὺς δὲ ἑλώρια τεῦχε κύνεσσιν",
+      "words": [
+        {
+          "form": "ἡρώων",
+          "gloss": "heroes",
+          "lemma": "ἥρως",
+          "pos": "noun",
+          "morphology": "masc gen pl",
+          "provenance": {
+            "agent": "referee",
+            "model": "claude-opus-4-20250514",
+            "challenged": false,
+            "creator_gloss": "of-heroes",
+            "decision": "spot-check-fix",
+            "reasoning": "This continues from the previous line - it's genitive plural completing 'souls of heroes'. The gloss should be just 'heroes' without 'of-' since that's implied by the genitive case."
+          }
+        },
+        {
+          "form": "αὐτοὺς",
+          "gloss": "them",
+          "lemma": "αὐτός",
+          "pos": "pronoun",
+          "morphology": "masc acc pl",
+          "provenance": {
+            "agent": "creator",
+            "model": "claude-sonnet-4-20250514",
+            "challenged": false
+          }
+        },
+        {
+          "form": "δὲ",
+          "gloss": "and",
+          "lemma": "δέ",
+          "pos": "particle",
+          "morphology": "indeclform (particle)",
+          "provenance": {
+            "agent": "creator",
+            "model": "claude-sonnet-4-20250514",
+            "challenged": false
+          }
+        },
+        {
+          "form": "ἑλώρια",
+          "gloss": "spoil",
+          "lemma": "ἑλώριον",
+          "pos": "noun",
+          "morphology": "neut nom/voc/acc pl",
+          "provenance": {
+            "agent": "creator",
+            "model": "claude-sonnet-4-20250514",
+            "challenged": false
+          }
+        },
+        {
+          "form": "τεῦχε",
+          "gloss": "made",
+          "lemma": "τεύχω",
+          "pos": "verb",
+          "morphology": "imperf ind act 3rd sg (homeric ionic) imperfect active indicative",
+          "provenance": {
+            "agent": "referee",
+            "model": "claude-opus-4-20250514",
+            "challenged": true,
+            "decision": "accept-neither",
+            "creator_gloss": "made",
+            "skeptic_gloss": "made",
+            "reasoning": "The Creator's gloss 'made' is correct for the meaning, but the Skeptic is right about the morphology being 3rd sg imperfect. However, the Skeptic's proposed fix is identical to the original, so neither adds the morphological precision needed. The gloss should remain 'made' as it correctly captures the sense in the translation."
+          }
+        },
+        {
+          "form": "κύνεσσιν",
+          "gloss": "for-dogs",
+          "lemma": "κύων",
+          "pos": "noun",
+          "morphology": "masc/fem dat pl (epic aeolic)",
+          "provenance": {
+            "agent": "creator",
+            "model": "claude-sonnet-4-20250514",
+            "challenged": false
+          }
+        }
+      ]
+    },
+    {
+      "reference": "1.5",
+      "greek": "οἰωνοῖσί τε πᾶσι, Διὸς δ᾽ ἐτελείετο βουλή,",
+      "words": [
+        {
+          "form": "οἰωνοῖσί",
+          "gloss": "for-birds",
+          "lemma": "Οἰωνός",
+          "pos": "noun",
+          "morphology": "masc dat pl (epic ionic aeolic)",
+          "provenance": {
+            "agent": "referee",
+            "model": "claude-opus-4-20250514",
+            "challenged": false,
+            "creator_gloss": "birds",
+            "decision": "spot-check-fix",
+            "reasoning": ""
+          }
+        },
+        {
+          "form": "τε",
+          "gloss": "and",
+          "lemma": "τε",
+          "pos": "particle",
+          "morphology": "enclitic indeclform (particle)",
+          "provenance": {
+            "agent": "creator",
+            "model": "claude-sonnet-4-20250514",
+            "challenged": false
+          }
+        },
+        {
+          "form": "πᾶσι",
+          "gloss": "all",
+          "lemma": "πᾶσις",
+          "pos": "noun",
+          "morphology": "fem dat sg (epic doric ionic aeolic)",
+          "provenance": {
+            "agent": "referee",
+            "model": "claude-opus-4-20250514",
+            "challenged": true,
+            "decision": "accept-neither",
+            "creator_gloss": "all",
+            "skeptic_gloss": "all",
+            "reasoning": "The gloss 'all' is correct, but the Skeptic's challenge about lemma/morphology is metadata-related, not about the gloss itself. The gloss accurately translates πᾶσι."
+          }
+        },
+        {
+          "form": "Διὸς",
+          "gloss": "of-Zeus",
+          "lemma": "Ζεύς",
+          "pos": "noun",
+          "morphology": "masc gen sg",
+          "provenance": {
+            "agent": "creator",
+            "model": "claude-sonnet-4-20250514",
+            "challenged": false
+          }
+        },
+        {
+          "form": "δ᾽",
+          "gloss": "and",
+          "lemma": "δέ",
+          "pos": "particle",
+          "morphology": "",
+          "provenance": {
+            "agent": "creator",
+            "model": "claude-sonnet-4-20250514",
+            "challenged": false
+          }
+        },
+        {
+          "form": "ἐτελείετο",
+          "gloss": "was-being-accomplished",
+          "lemma": "τελέω",
+          "pos": "verb",
+          "morphology": "imperf ind mp 3rd sg imperfect middle/passive indicative",
+          "provenance": {
+            "agent": "creator",
+            "model": "claude-sonnet-4-20250514",
+            "challenged": false
+          }
+        },
+        {
+          "form": "βουλή",
+          "gloss": "plan",
+          "lemma": "Βούλις",
+          "pos": "noun",
+          "morphology": "fem dat sg (epic)",
+          "provenance": {
+            "agent": "referee",
+            "model": "claude-opus-4-20250514",
+            "challenged": true,
+            "decision": "accept-creator"
+          }
+        }
+      ]
+    }
+  ],
+  "mode": "api"
+}

@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "events": [
+    {
+      "at": "2026-03-23T16:36:22Z",
+      "stage": "0-intake",
+      "action": "workspace_initialized",
+      "profile": "add",
+      "affected_stages": [
+        "0-intake",
+        "1-source-discovery",
+        "2-acquisition-extraction",
+        "3-cleaning-normalization",
+        "4-structural-segmentation",
+        "5-witness-normalization-ranking",
+        "6-versification-alignment",
+        "7-transliteration",
+        "8-interlinear-morphology",
+        "9-reader-reliability",
+        "10-human-review"
+      ],
+      "notes": "Created canonical text-pipeline workspace."
+    },
+    {
+      "at": "2026-03-23T16:52:09Z",
+      "stage": "4-structural-segmentation",
+      "action": "segmentation_ran",
+      "profile": "add",
+      "affected_stages": [
+        "4-structural-segmentation"
+      ],
+      "notes": "segmented 1 clean file(s); reference system: fable.sentence; unit: sentence"
+    },
+    {
+      "at": "2026-03-23T17:01:38Z",
+      "stage": "6-versification-alignment",
+      "action": "versify_ran",
+      "profile": "add",
+      "affected_stages": [
+        "6-versification-alignment"
+      ],
+      "notes": "no primary witness selected; no witness segments found for the primary witness; alignment mode: blocked; coverage: 0.0%; no witness segments available"
+    },
+    {
+      "at": "2026-03-23T17:03:52Z",
+      "stage": "7-transliteration",
+      "action": "transliteration_ran",
+      "profile": "add",
+      "affected_stages": [
+        "7-transliteration"
+      ],
+      "notes": "generated 5 transliteration line(s) with lyceum-greek-latin-v1"
+    },
+    {
+      "at": "2026-03-23T17:09:09Z",
+      "stage": "8-interlinear-morphology",
+      "action": "ground_truth_benchmarked",
+      "profile": "add",
+      "affected_stages": [
+        "8-interlinear-morphology"
+      ],
+      "notes": "ground-truth scope: unavailable; ground-truth corpus:; ground-truth entries: 0; ground-truth unique Greek forms: 0; ground-truth high-confidence entries: 0; no ground-truth corpus found under configured corpus root; no ground-truth corpus was selected for this workspace; gloss-review benchmark should record benchmark absence explicitly; ground-truth provider does not self-promote Stage 8; run gloss-review benchmark next"
+    },
+    {
+      "at": "2026-03-23T17:10:04Z",
+      "stage": "8-interlinear-morphology",
+      "action": "treebank_provider_ran",
+      "profile": "add",
+      "affected_stages": [
+        "8-interlinear-morphology"
+      ],
+      "notes": "parsed 0 treebank reference entrie(s); parsed 0 treebank token(s); consumable exact-reference entrie(s): 0; source path: /dev/null; treebank validation note count: 2; no treebank references were parsed; no treebank tokens were parsed"
+    },
+    {
+      "at": "2026-03-23T17:10:31Z",
+      "stage": "8-interlinear-morphology",
+      "action": "gloss_review_benchmarked",
+      "profile": "add",
+      "affected_stages": [
+        "8-interlinear-morphology"
+      ],
+      "notes": "gloss-review decision: blocked; interlinear completeness: 0.00; benchmark status: not_available; loaded ground-truth provider artifact with 0 entrie(s); ground-truth scope: unavailable; ground-truth provider artifact unavailable in canonical workspace; run text_pipeline_ground_truth.go benchmark before relying on workspace benchmark output; no candidate interlinear segments found; document unresolved flags: 1; run ground-truth provider benchmark in the workspace before relying on Stage 8 benchmark output"
+    },
+    {
+      "at": "2026-03-23T17:10:50Z",
+      "stage": "8-interlinear-morphology",
+      "action": "gloss_review_promoted",
+      "profile": "add",
+      "affected_stages": [
+        "8-interlinear-morphology"
+      ],
+      "notes": "gloss-review decision: blocked; interlinear completeness: 0.00; benchmark status: not_available; loaded ground-truth provider artifact with 0 entrie(s); ground-truth scope: unavailable; ground-truth provider artifact unavailable in canonical workspace; run text_pipeline_ground_truth.go benchmark before relying on workspace benchmark output; no candidate interlinear segments found; document unresolved flags: 1; promotion is proceeding without workspace ground-truth benchmark evidence; benchmark absence should be reviewed"
+    }
+  ]
+}

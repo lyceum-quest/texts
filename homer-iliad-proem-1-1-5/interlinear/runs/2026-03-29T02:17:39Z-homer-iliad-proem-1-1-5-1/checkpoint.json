@@ -1,0 +1,786 @@
+{
+  "completed_batches": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "batch_results": [
+    {
+      "words": [
+        {
+          "form": "μῆνιν",
+          "gloss": "wrath",
+          "lemma": "μῆνις",
+          "pos": "noun",
+          "confidence": "high",
+          "evidence": [
+            "translation",
+            "dictionary"
+          ],
+          "provenance": {
+            "agent": "creator",
+            "model": "default",
+            "challenged": false
+          }
+        },
+        {
+          "form": "ἄειδε",
+          "gloss": "sing",
+          "lemma": "ἀείδω",
+          "pos": "verb",
+          "confidence": "high",
+          "evidence": [
+            "translation",
+            "morphology"
+          ],
+          "provenance": {
+            "agent": "referee",
+            "model": "default",
+            "challenged": true,
+            "decision": "accept-creator"
+          }
+        },
+        {
+          "form": "θεὰ",
+          "gloss": "goddess",
+          "lemma": "θεά",
+          "pos": "noun",
+          "confidence": "high",
+          "evidence": [
+            "translation",
+            "dictionary"
+          ],
+          "provenance": {
+            "agent": "referee",
+            "model": "default",
+            "challenged": true,
+            "decision": "accept-creator"
+          }
+        },
+        {
+          "form": "Πηληϊάδεω",
+          "gloss": "of-Peleus'-son",
+          "lemma": "Πηληϊάδης",
+          "pos": "noun",
+          "confidence": "high",
+          "evidence": [
+            "translation",
+            "proper-name",
+            "morphology"
+          ],
+          "provenance": {
+            "agent": "creator",
+            "model": "default",
+            "challenged": false
+          }
+        },
+        {
+          "form": "Ἀχιλῆος",
+          "gloss": "of-Achilles",
+          "lemma": "Ἀχιλλεύς",
+          "pos": "noun",
+          "confidence": "high",
+          "evidence": [
+            "translation",
+            "proper-name",
+            "morphology"
+          ],
+          "provenance": {
+            "agent": "creator",
+            "model": "default",
+            "challenged": false
+          }
+        }
+      ],
+      "challenges": 2,
+      "decisions": {
+        "accept-creator": 2,
+        "accept-skeptic": 0,
+        "accept-neither": 0
+      },
+      "calls": [
+        {
+          "input_tokens": 1744,
+          "output_tokens": 386,
+          "cost_usd": 0.01837,
+          "latency_ms": 6249,
+          "model": "claude-opus-4-6",
+          "agent": "creator",
+          "batch_ref": "1.1",
+          "words_in_batch": 5,
+          "attempt": 1,
+          "status": "ok"
+        },
+        {
+          "input_tokens": 1509,
+          "output_tokens": 289,
+          "cost_usd": 0.014770000000000002,
+          "latency_ms": 8118,
+          "model": "claude-opus-4-6",
+          "agent": "skeptic",
+          "batch_ref": "1.1",
+          "words_in_batch": 5,
+          "attempt": 1,
+          "status": "ok"
+        },
+        {
+          "input_tokens": 1624,
+          "output_tokens": 564,
+          "cost_usd": 0.022220000000000004,
+          "latency_ms": 10948,
+          "model": "claude-opus-4-6",
+          "agent": "referee",
+          "batch_ref": "1.1",
+          "words_in_batch": 2,
+          "attempt": 1,
+          "status": "ok"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "words": [
+        {
+          "form": "οὐλομένην",
+          "gloss": "accursed",
+          "lemma": "οὐλόμενος",
+          "pos": "adjective",
+          "confidence": "high",
+          "evidence": [
+            "translation",
+            "morphology"
+          ],
+          "provenance": {
+            "agent": "referee",
+            "model": "default",
+            "challenged": false,
+            "creator_gloss": "destructive",
+            "decision": "spot-check-fix",
+            "reasoning": "οὐλομένην is the middle aorist participle of ὄλλυμι ('to destroy'), used in a quasi-passive/reflexive sense meaning 'accursed, ruinous, baneful.' While 'destructive' is defensible, 'accursed' is the standard lexical gloss for this form in Homer (LSJ, Cunliffe). The participle has a quasi-adjectival force closer to 'accursed/damned' than the active sense 'destructive.'"
+          }
+        },
+        {
+          "form": "ἣ",
+          "gloss": "which",
+          "lemma": "ὅς",
+          "pos": "pronoun",
+          "confidence": "high",
+          "evidence": [
+            "translation",
+            "context"
+          ],
+          "provenance": {
+            "agent": "referee",
+            "model": "default",
+            "challenged": true,
+            "decision": "accept-skeptic",
+            "creator_gloss": "which",
+            "skeptic_gloss": "which",
+            "reasoning": "The Skeptic is correct that the lemma should be ὅς (relative pronoun), not ὁ (article). The gloss 'which' is the same either way, but the morphological identification matters. ἥ here is feminine nominative singular of the relative pronoun ὅς, ἥ, ὅ."
+          }
+        },
+        {
+          "form": "μυρί᾽",
+          "gloss": "countless",
+          "lemma": "μυρίος",
+          "pos": "adjective",
+          "confidence": "high",
+          "evidence": [
+            "translation",
+            "dictionary"
+          ],
+          "provenance": {
+            "agent": "referee",
+            "model": "default",
+            "challenged": true,
+            "decision": "accept-creator"
+          }
+        },
+        {
+          "form": "Ἀχαιοῖς",
+          "gloss": "for-the-Achaeans",
+          "lemma": "Ἀχαιός",
+          "pos": "noun",
+          "confidence": "high",
+          "evidence": [
+            "translation",
+            "proper-name",
+            "morphology"
+          ],
+          "provenance": {
+            "agent": "referee",
+            "model": "default",
+            "challenged": true,
+            "decision": "accept-skeptic",
+            "creator_gloss": "upon-the-Achaeans",
+            "skeptic_gloss": "for-the-Achaeans",
+            "reasoning": "The Skeptic is right that the dative case is best glossed as 'for-the-Achaeans' (dative of disadvantage). 'Upon' implies a prepositional phrase (ἐπί + acc/gen) that isn't present in the Greek. A gloss should reflect the Greek morphology, not borrow phrasing from a free English translation."
+          }
+        },
+        {
+          "form": "ἄλγε᾽",
+          "gloss": "woes",
+          "lemma": "ἄλγος",
+          "pos": "noun",
+          "confidence": "high",
+          "evidence": [
+            "translation",
+            "morphology"
+          ],
+          "provenance": {
+            "agent": "creator",
+            "model": "default",
+            "challenged": false
+          }
+        },
+        {
+          "form": "ἔθηκε",
+          "gloss": "caused",
+          "lemma": "τίθημι",
+          "pos": "verb",
+          "confidence": "high",
+          "evidence": [
+            "translation",
+            "morphology"
+          ],
+          "provenance": {
+            "agent": "referee",
+            "model": "default",
+            "challenged": true,
+            "decision": "accept-neither",
+            "creator_gloss": "brought",
+            "skeptic_gloss": "placed",
+            "reasoning": "τίθημι in the idiom ἄλγεα θεῖναι means 'caused/inflicted' — it doesn't literally mean 'placed' (putting something on a surface) nor 'brought' (φέρω). The construction τίθημι + abstract accusative regularly means 'cause/bring about.' 'Caused' captures the actual semantics of this Homeric idiom better than either 'placed' or 'brought.'"
+          }
+        }
+      ],
+      "challenges": 4,
+      "decisions": {
+        "accept-creator": 1,
+        "accept-skeptic": 2,
+        "accept-neither": 1
+      },
+      "calls": [
+        {
+          "input_tokens": 1733,
+          "output_tokens": 456,
+          "cost_usd": 0.020065,
+          "latency_ms": 7360,
+          "model": "claude-opus-4-6",
+          "agent": "creator",
+          "batch_ref": "1.2",
+          "words_in_batch": 6,
+          "attempt": 1,
+          "status": "ok"
+        },
+        {
+          "input_tokens": 1510,
+          "output_tokens": 491,
+          "cost_usd": 0.019825000000000002,
+          "latency_ms": 10954,
+          "model": "claude-opus-4-6",
+          "agent": "skeptic",
+          "batch_ref": "1.2",
+          "words_in_batch": 6,
+          "attempt": 1,
+          "status": "ok"
+        },
+        {
+          "input_tokens": 1801,
+          "output_tokens": 966,
+          "cost_usd": 0.033155000000000004,
+          "latency_ms": 20050,
+          "model": "claude-opus-4-6",
+          "agent": "referee",
+          "batch_ref": "1.2",
+          "words_in_batch": 4,
+          "attempt": 1,
+          "status": "ok"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "words": [
+        {
+          "form": "πολλὰς",
+          "gloss": "many",
+          "lemma": "πολύς",
+          "pos": "adj",
+          "confidence": "high",
+          "evidence": [
+            "translation",
+            "dictionary"
+          ],
+          "provenance": {
+            "agent": "creator",
+            "model": "default",
+            "challenged": false
+          }
+        },
+        {
+          "form": "δ᾽",
+          "gloss": "and",
+          "lemma": "δέ",
+          "pos": "particle",
+          "confidence": "high",
+          "evidence": [
+            "translation",
+            "context"
+          ],
+          "provenance": {
+            "agent": "creator",
+            "model": "default",
+            "challenged": false
+          }
+        },
+        {
+          "form": "ἰφθίμους",
+          "gloss": "valiant",
+          "lemma": "ἴφθιμος",
+          "pos": "adj",
+          "confidence": "high",
+          "evidence": [
+            "translation",
+            "dictionary"
+          ],
+          "provenance": {
+            "agent": "creator",
+            "model": "default",
+            "challenged": false
+          }
+        },
+        {
+          "form": "ψυχὰς",
+          "gloss": "souls",
+          "lemma": "ψυχή",
+          "pos": "noun",
+          "confidence": "high",
+          "evidence": [
+            "translation",
+            "dictionary",
+            "morphology"
+          ],
+          "provenance": {
+            "agent": "creator",
+            "model": "default",
+            "challenged": false
+          }
+        },
+        {
+          "form": "Ἄϊδι",
+          "gloss": "to-Hades",
+          "lemma": "ᾍδης",
+          "pos": "noun",
+          "confidence": "high",
+          "evidence": [
+            "translation",
+            "proper-name",
+            "morphology"
+          ],
+          "provenance": {
+            "agent": "creator",
+            "model": "default",
+            "challenged": false
+          }
+        },
+        {
+          "form": "προΐαψεν",
+          "gloss": "sent-forth",
+          "lemma": "προϊάπτω",
+          "pos": "verb",
+          "confidence": "high",
+          "evidence": [
+            "translation",
+            "morphology"
+          ],
+          "provenance": {
+            "agent": "creator",
+            "model": "default",
+            "challenged": false
+          }
+        }
+      ],
+      "challenges": 0,
+      "decisions": {
+        "accept-creator": 0,
+        "accept-skeptic": 0,
+        "accept-neither": 0
+      },
+      "calls": [
+        {
+          "input_tokens": 1692,
+          "output_tokens": 440,
+          "cost_usd": 0.01946,
+          "latency_ms": 6982,
+          "model": "claude-opus-4-6",
+          "agent": "creator",
+          "batch_ref": "1.3",
+          "words_in_batch": 6,
+          "attempt": 1,
+          "status": "ok"
+        },
+        {
+          "input_tokens": 1470,
+          "output_tokens": 4,
+          "cost_usd": 0.007450000000000001,
+          "latency_ms": 3169,
+          "model": "claude-opus-4-6",
+          "agent": "skeptic",
+          "batch_ref": "1.3",
+          "words_in_batch": 6,
+          "attempt": 1,
+          "status": "ok"
+        },
+        {
+          "input_tokens": 1429,
+          "output_tokens": 252,
+          "cost_usd": 0.013445,
+          "latency_ms": 6912,
+          "model": "claude-opus-4-6",
+          "agent": "referee",
+          "batch_ref": "1.3",
+          "words_in_batch": 6,
+          "attempt": 1,
+          "status": "ok"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "words": [
+        {
+          "form": "ἡρώων",
+          "gloss": "of-heroes",
+          "lemma": "ἥρως",
+          "pos": "noun",
+          "confidence": "high",
+          "evidence": [
+            "morphology",
+            "dictionary"
+          ],
+          "provenance": {
+            "agent": "creator",
+            "model": "default",
+            "challenged": false
+          }
+        },
+        {
+          "form": "αὐτοὺς",
+          "gloss": "them",
+          "lemma": "αὐτός",
+          "pos": "pronoun",
+          "confidence": "high",
+          "evidence": [
+            "translation",
+            "morphology"
+          ],
+          "provenance": {
+            "agent": "referee",
+            "model": "default",
+            "challenged": false,
+            "creator_gloss": "themselves",
+            "decision": "spot-check-fix",
+            "reasoning": "αὐτούς here is accusative plural functioning as a direct object ('made them spoil'), not reflexive. The translation says 'made them themselves spoil' but the intensive/reflexive sense comes from the contrast with ψυχάς in the prior line (their souls vs. them [their bodies]). As a simple interlinear gloss, 'them' is more accurate for the accusative pronoun. 'Themselves' would be ἑαυτούς."
+          }
+        },
+        {
+          "form": "δὲ",
+          "gloss": "and",
+          "lemma": "δέ",
+          "pos": "particle",
+          "confidence": "high",
+          "evidence": [
+            "translation",
+            "context"
+          ],
+          "provenance": {
+            "agent": "creator",
+            "model": "default",
+            "challenged": false
+          }
+        },
+        {
+          "form": "ἑλώρια",
+          "gloss": "spoil",
+          "lemma": "ἑλώριον",
+          "pos": "noun",
+          "confidence": "high",
+          "evidence": [
+            "translation",
+            "dictionary"
+          ],
+          "provenance": {
+            "agent": "creator",
+            "model": "default",
+            "challenged": false
+          }
+        },
+        {
+          "form": "τεῦχε",
+          "gloss": "made",
+          "lemma": "τεύχω",
+          "pos": "verb",
+          "confidence": "high",
+          "evidence": [
+            "translation",
+            "context"
+          ],
+          "provenance": {
+            "agent": "referee",
+            "model": "default",
+            "challenged": true,
+            "decision": "accept-creator"
+          }
+        },
+        {
+          "form": "κύνεσσιν",
+          "gloss": "for-dogs",
+          "lemma": "κύων",
+          "pos": "noun",
+          "confidence": "high",
+          "evidence": [
+            "translation",
+            "morphology"
+          ],
+          "provenance": {
+            "agent": "creator",
+            "model": "default",
+            "challenged": false
+          }
+        }
+      ],
+      "challenges": 1,
+      "decisions": {
+        "accept-creator": 1,
+        "accept-skeptic": 0,
+        "accept-neither": 0
+      },
+      "calls": [
+        {
+          "input_tokens": 1758,
+          "output_tokens": 429,
+          "cost_usd": 0.019515,
+          "latency_ms": 6615,
+          "model": "claude-opus-4-6",
+          "agent": "creator",
+          "batch_ref": "1.4",
+          "words_in_batch": 6,
+          "attempt": 1,
+          "status": "ok"
+        },
+        {
+          "input_tokens": 1521,
+          "output_tokens": 143,
+          "cost_usd": 0.01118,
+          "latency_ms": 5855,
+          "model": "claude-opus-4-6",
+          "agent": "skeptic",
+          "batch_ref": "1.4",
+          "words_in_batch": 6,
+          "attempt": 1,
+          "status": "ok"
+        },
+        {
+          "input_tokens": 1507,
+          "output_tokens": 652,
+          "cost_usd": 0.023835000000000002,
+          "latency_ms": 13216,
+          "model": "claude-opus-4-6",
+          "agent": "referee",
+          "batch_ref": "1.4",
+          "words_in_batch": 1,
+          "attempt": 1,
+          "status": "ok"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "words": [
+        {
+          "form": "οἰωνοῖσί",
+          "gloss": "for-birds",
+          "lemma": "οἰωνός",
+          "pos": "noun",
+          "confidence": "high",
+          "evidence": [
+            "translation",
+            "morphology"
+          ],
+          "provenance": {
+            "agent": "referee",
+            "model": "default",
+            "challenged": true,
+            "decision": "accept-skeptic",
+            "creator_gloss": "for-birds",
+            "skeptic_gloss": "for-birds",
+            "reasoning": "The gloss 'for-birds' is correct. The Skeptic is right that the lemma should be οἰωνός (common noun, lowercase), not a capitalized proper name. This is a metadata/lemma correction, not a gloss correction."
+          }
+        },
+        {
+          "form": "τε",
+          "gloss": "and",
+          "lemma": "τε",
+          "pos": "particle",
+          "confidence": "high",
+          "evidence": [
+            "translation",
+            "dictionary"
+          ],
+          "provenance": {
+            "agent": "creator",
+            "model": "default",
+            "challenged": false
+          }
+        },
+        {
+          "form": "πᾶσι",
+          "gloss": "all",
+          "lemma": "πᾶς",
+          "pos": "adjective",
+          "confidence": "high",
+          "evidence": [
+            "context",
+            "morphology"
+          ],
+          "provenance": {
+            "agent": "referee",
+            "model": "default",
+            "challenged": true,
+            "decision": "accept-skeptic",
+            "creator_gloss": "all",
+            "skeptic_gloss": "all",
+            "reasoning": "The gloss 'all' is correct. The Skeptic is right on both counts: the lemma must be πᾶς (not πᾶσις, which doesn't exist), and the morphology is dative plural (agreeing with οἰωνοῖσί), not feminine dative singular."
+          }
+        },
+        {
+          "form": "Διὸς",
+          "gloss": "of-Zeus",
+          "lemma": "Ζεύς",
+          "pos": "noun",
+          "confidence": "high",
+          "evidence": [
+            "proper-name",
+            "morphology",
+            "translation"
+          ],
+          "provenance": {
+            "agent": "creator",
+            "model": "default",
+            "challenged": false
+          }
+        },
+        {
+          "form": "δ᾽",
+          "gloss": "and/but",
+          "lemma": "δέ",
+          "pos": "particle",
+          "confidence": "high",
+          "evidence": [
+            "translation",
+            "context"
+          ],
+          "provenance": {
+            "agent": "referee",
+            "model": "default",
+            "challenged": false,
+            "creator_gloss": "and",
+            "decision": "spot-check-fix",
+            "reasoning": "δέ is a postpositive particle whose primary force is continuative/adversative. While 'and' works here given the translation context, a more precise gloss would be 'and' or 'but'. However, since the translation uses 'and' and δέ commonly functions as a mild connective, 'and' is acceptable. Marking as correct on reflection."
+          }
+        },
+        {
+          "form": "ἐτελείετο",
+          "gloss": "was-being-accomplished",
+          "lemma": "τελέω",
+          "pos": "verb",
+          "confidence": "high",
+          "evidence": [
+            "translation",
+            "morphology"
+          ],
+          "provenance": {
+            "agent": "referee",
+            "model": "default",
+            "challenged": true,
+            "decision": "accept-skeptic",
+            "creator_gloss": "was-being-accomplished",
+            "skeptic_gloss": "was-being-accomplished",
+            "reasoning": "The gloss is correct. The Skeptic's point about the lemma is a minor style issue — τελείω is the epic/uncontracted form. The standard lexical entry is typically τελέω, but τελείω is acceptable for Homeric Greek. Either way the gloss is fine."
+          }
+        },
+        {
+          "form": "βουλή",
+          "gloss": "plan",
+          "lemma": "βουλή",
+          "pos": "noun",
+          "confidence": "high",
+          "evidence": [
+            "translation",
+            "dictionary"
+          ],
+          "provenance": {
+            "agent": "referee",
+            "model": "default",
+            "challenged": true,
+            "decision": "accept-skeptic",
+            "creator_gloss": "plan",
+            "skeptic_gloss": "plan",
+            "reasoning": "The gloss 'plan' is correct. The Skeptic is right: the lemma should be βουλή (not Βούλις, a proper name), and the morphology is nominative singular feminine (subject of ἐτελείετο), not dative singular (which would be βουλῇ with circumflex and iota subscript)."
+          }
+        }
+      ],
+      "challenges": 4,
+      "decisions": {
+        "accept-creator": 0,
+        "accept-skeptic": 4,
+        "accept-neither": 0
+      },
+      "calls": [
+        {
+          "input_tokens": 1779,
+          "output_tokens": 792,
+          "cost_usd": 0.028695000000000002,
+          "latency_ms": 13277,
+          "model": "claude-opus-4-6",
+          "agent": "creator",
+          "batch_ref": "1.5",
+          "words_in_batch": 7,
+          "attempt": 1,
+          "status": "ok"
+        },
+        {
+          "input_tokens": 1554,
+          "output_tokens": 530,
+          "cost_usd": 0.021020000000000004,
+          "latency_ms": 10857,
+          "model": "claude-opus-4-6",
+          "agent": "skeptic",
+          "batch_ref": "1.5",
+          "words_in_batch": 7,
+          "attempt": 1,
+          "status": "ok"
+        },
+        {
+          "input_tokens": 1834,
+          "output_tokens": 917,
+          "cost_usd": 0.032095,
+          "latency_ms": 16786,
+          "model": "claude-opus-4-6",
+          "agent": "referee",
+          "batch_ref": "1.5",
+          "words_in_batch": 4,
+          "attempt": 1,
+          "status": "ok"
+        }
+      ],
+      "errors": []
+    }
+  ],
+  "started_at": "2026-03-29T02:17:39Z",
+  "last_batch": 4,
+  "saved_at": "2026-03-29T02:20:06Z"
+}

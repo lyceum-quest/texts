@@ -1,0 +1,16 @@
+{
+  "greek": {
+    "original_size": 407,
+    "cleaned_size": 407,
+    "contamination": [],
+    "changes": [],
+    "lines": 4
+  },
+  "english": {
+    "original_size": 466,
+    "cleaned_size": 466,
+    "contamination": [],
+    "changes": [],
+    "lines": 6
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-03-23T08:52:10Z",
+  "updated_at": "2026-03-23T09:24:30Z",
+  "slug": "marcus-aurelius-meditations-book-1",
+  "work": "Marcus Aurelius, Meditations Book 1",
+  "author_urn": "urn:cts:greekLit:tlg0562",
+  "work_urn": "urn:cts:greekLit:tlg0562.tlg001",
+  "mode": "add",
+  "profile": "add",
+  "requested_stages": [
+    "0-intake",
+    "1-source-discovery",
+    "2-acquisition-extraction",
+    "3-cleaning-normalization",
+    "4-structural-segmentation",
+    "5-witness-normalization-ranking",
+    "6-versification-alignment",
+    "7-transliteration",
+    "8-interlinear-morphology",
+    "9-reader-reliability",
+    "10-human-review"
+  ],
+  "target_output": "review-pack",
+  "base_greek_edition_strategy": "Perseus TEI XML (Leopold 1908, Teubner)",
+  "target_reference_system": "Book.Chapter.Section (prose, Book 1 chapters 1-17)",
+  "success_criteria": [],
+  "risks": [],
+  "blockers": [],
+  "open_questions": [],
+  "author": "Marcus Aurelius"
+}

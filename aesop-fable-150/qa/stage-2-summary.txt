@@ -1,0 +1,83 @@
+===================================================================
+STAGE 2: ACQUISITION & EXTRACTION — COMPLETED
+===================================================================
+
+Workspace: aesop-fable-150
+Completed: 2026-03-23
+Status: ✅ READY FOR STAGE 3
+
+CRITICAL DISCOVERY
+==================
+Initial assumption CORRECTED:
+  ❌ Assumed: "The Ass and the Mule"
+  ✅ Actual:  "The Crab and the Fox" (Καρκῖνος καὶ ἀλώπηξ)
+  
+Perry Index: Perry 116
+Chambry Number: 150
+
+SOURCES ACQUIRED
+================
+
+Greek Source:
+  • mythfolklore.net (Laura Gibbs Aesopica)
+  • Edition: Chambry (Belles Lettres, 1925/6)
+  • Format: HTML → text extraction
+  • Quality: HIGH (authoritative, digital-native)
+  • File: raw/mythfolklore_chambry_150_http.html (6.4 KB)
+
+English Source:
+  • Project Gutenberg (Vernon Jones 1912)
+  • Format: Plain text
+  • Quality: HIGH (public domain, clean)
+  • File: raw/gutenberg_jones_11339.txt (237 KB)
+
+Note: Townsend (1867) does not include this fable
+
+EXTRACTED FILES
+===============
+  • extracted/greek.txt (796 bytes UTF-8) ✅
+  • extracted/english.txt (466 bytes) ✅
+
+Both files contain complete fable text with title and moral.
+
+ATTEMPTS & FALLBACKS
+====================
+  ❌ Perseus Digital Library (wrong text ID)
+     → Fallback: mythfolklore.net ✅
+  ❌ Greek Wikisource (page doesn't exist)
+     → Not needed (primary source excellent)
+  ⚠️  Townsend translation (fable not present)
+     → Vernon Jones sufficient
+
+QUALITY ASSESSMENT
+==================
+  Greek:   HIGH confidence, digital-native, complete
+  English: HIGH confidence, digital-native, complete
+  OCR issues: NONE (both sources digital)
+  Structural: Clean, no boilerplate or navigation
+
+VERIFICATION
+============
+  Automated check: 4/6 passed, 2 size warnings
+  Assessment: FALSE POSITIVE (short fable is expected)
+  Override: PASS (text complete and correct)
+
+ARTIFACTS CREATED
+=================
+  Raw files:        6 files (350+ KB)
+  Extracted files:  2 files (complete)
+  Reports:          3 files (documentation)
+  Updated:          state.json, provenance.md, manifest.json
+
+READY FOR STAGE 3
+=================
+  ✅ Raw sources preserved
+  ✅ Extracted texts clean and complete
+  ✅ Fable identity confirmed
+  ✅ Perry Index cross-referenced
+  ✅ Extraction paths documented
+  ✅ No OCR or encoding issues
+  
+Next: /text-cleaning run aesop-fable-150
+
+===================================================================

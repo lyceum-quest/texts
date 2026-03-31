@@ -1,0 +1,77 @@
+[
+  {
+    "batch_index": 0,
+    "words": 8,
+    "api_calls": 3,
+    "total_input_tokens": 5608,
+    "total_output_tokens": 2503,
+    "total_cost_usd": 0.090615,
+    "cost_per_word_usd": 0.011327,
+    "challenges": 6,
+    "decisions": {
+      "accept-creator": 2,
+      "accept-skeptic": 3,
+      "accept-neither": 1
+    }
+  },
+  {
+    "batch_index": 1,
+    "words": 6,
+    "api_calls": 3,
+    "total_input_tokens": 5074,
+    "total_output_tokens": 1786,
+    "total_cost_usd": 0.07002,
+    "cost_per_word_usd": 0.01167,
+    "challenges": 3,
+    "decisions": {
+      "accept-creator": 0,
+      "accept-skeptic": 3,
+      "accept-neither": 0
+    }
+  },
+  {
+    "batch_index": 2,
+    "words": 8,
+    "api_calls": 3,
+    "total_input_tokens": 5082,
+    "total_output_tokens": 1545,
+    "total_cost_usd": 0.064035,
+    "cost_per_word_usd": 0.008004,
+    "challenges": 2,
+    "decisions": {
+      "accept-creator": 2,
+      "accept-skeptic": 0,
+      "accept-neither": 0
+    }
+  },
+  {
+    "batch_index": 3,
+    "words": 11,
+    "api_calls": 3,
+    "total_input_tokens": 5887,
+    "total_output_tokens": 2811,
+    "total_cost_usd": 0.09971,
+    "cost_per_word_usd": 0.009065,
+    "challenges": 7,
+    "decisions": {
+      "accept-creator": 2,
+      "accept-skeptic": 4,
+      "accept-neither": 1
+    }
+  },
+  {
+    "batch_index": 4,
+    "words": 7,
+    "api_calls": 3,
+    "total_input_tokens": 4957,
+    "total_output_tokens": 1729,
+    "total_cost_usd": 0.06801,
+    "cost_per_word_usd": 0.009716,
+    "challenges": 2,
+    "decisions": {
+      "accept-creator": 2,
+      "accept-skeptic": 0,
+      "accept-neither": 0
+    }
+  }
+]

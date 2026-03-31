@@ -1,0 +1,16 @@
+[
+  {
+    "id": "perseus-iliad-greek",
+    "title": "Homer, Iliad (Greek)",
+    "source": "Perseus Digital Library",
+    "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0133",
+    "license": "Creative Commons CC-BY-SA",
+    "format": "TEI XML",
+    "language": "grc",
+    "edition": "Homer. Homeri Opera (ed. Monro & Allen, Oxford 1920)",
+    "coverage": "Lines 1.1-1.5 (proem excerpt)",
+    "quality": "canonical critical edition",
+    "recommended": true,
+    "notes": "Standard scholarly text. Only first 5 lines needed for this workspace."
+  }
+]

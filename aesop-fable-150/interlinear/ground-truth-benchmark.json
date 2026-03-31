@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-03-23T17:09:09Z",
+  "work": "Aesop, Fable 150 (The Crab and the Fox)",
+  "slug": "aesop-fable-150",
+  "scope": "unavailable",
+  "entry_count": 0,
+  "unique_greek_count": 0,
+  "high_confidence_entry_count": 0,
+  "entries": [],
+  "notes": [
+    "no ground-truth corpus found under configured corpus root",
+    "no ground-truth corpus was selected for this workspace",
+    "gloss-review benchmark should record benchmark absence explicitly"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-03-23T17:01:38Z",
+  "mode": "blocked",
+  "greek_unit_count": 5,
+  "witness_segment_count": 0,
+  "mapped_count": 0,
+  "coverage": 0,
+  "unmatched_greek": [],
+  "unmatched_witness": [],
+  "mappings": [],
+  "notes": [
+    "no witness segments available"
+  ]
+}

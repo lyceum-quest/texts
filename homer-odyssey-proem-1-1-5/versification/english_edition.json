@@ -1,0 +1,26 @@
+{
+  "edition": "murray-1919",
+  "source": "versified-witness",
+  "segments": [
+    {
+      "ref": "1.1",
+      "text": "Tell me, O Muse, of the man of many devices, who wandered full many ways"
+    },
+    {
+      "ref": "1.2",
+      "text": "after he had sacked the sacred citadel of Troy."
+    },
+    {
+      "ref": "1.3",
+      "text": "Many were the men whose cities he saw and whose mind he learned,"
+    },
+    {
+      "ref": "1.4",
+      "text": "and many the woes he suffered in his heart upon the sea,"
+    },
+    {
+      "ref": "1.5",
+      "text": "seeking to win his own life and the return of his comrades."
+    }
+  ]
+}

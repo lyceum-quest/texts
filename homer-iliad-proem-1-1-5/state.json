@@ -1,0 +1,226 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-03-24T15:02:30Z",
+  "updated_at": "2026-03-24T15:17:38Z",
+  "current_stage": "10-human-review",
+  "last_profile": "add",
+  "invalidated_stages": [],
+  "stages": [
+    {
+      "stage": "0-intake",
+      "requested": true,
+      "status": "done",
+      "last_run_at": "2026-03-24T15:02:30Z",
+      "inputs": [],
+      "invalidates": [],
+      "outputs": [],
+      "notes": [
+        "workspace initialized"
+      ]
+    },
+    {
+      "stage": "1-source-discovery",
+      "requested": true,
+      "status": "done",
+      "last_run_at": "2026-03-24T15:02:30Z",
+      "inputs": [],
+      "invalidates": [
+        "2-acquisition-extraction",
+        "3-cleaning-normalization",
+        "4-structural-segmentation",
+        "5-witness-normalization-ranking",
+        "6-versification-alignment",
+        "7-transliteration",
+        "8-interlinear-morphology",
+        "9-reader-reliability",
+        "10-human-review"
+      ],
+      "outputs": [],
+      "notes": [
+        "Perseus Greek (Monro & Allen 1920)",
+        "Murray 1924 English translation"
+      ]
+    },
+    {
+      "stage": "2-acquisition-extraction",
+      "requested": true,
+      "status": "done",
+      "last_run_at": "2026-03-24T15:02:30Z",
+      "inputs": [],
+      "invalidates": [
+        "3-cleaning-normalization",
+        "4-structural-segmentation",
+        "5-witness-normalization-ranking",
+        "6-versification-alignment",
+        "7-transliteration",
+        "8-interlinear-morphology",
+        "9-reader-reliability",
+        "10-human-review"
+      ],
+      "outputs": [],
+      "notes": [
+        "Greek: raw/greek_perseus.txt (5 lines)",
+        "English: raw/english_murray.txt (Murray 1924)"
+      ]
+    },
+    {
+      "stage": "3-cleaning-normalization",
+      "requested": true,
+      "status": "done",
+      "last_run_at": "2026-03-24T15:05:39Z",
+      "inputs": [],
+      "invalidates": [
+        "4-structural-segmentation",
+        "5-witness-normalization-ranking",
+        "6-versification-alignment",
+        "7-transliteration",
+        "8-interlinear-morphology",
+        "9-reader-reliability",
+        "10-human-review"
+      ],
+      "outputs": [],
+      "notes": [
+        "Applied Unicode NFC normalization",
+        "Verified UTF-8 encoding",
+        "No contamination detected in Greek text",
+        "No markup detected in English text",
+        "Output: clean/greek.txt, clean/english.txt"
+      ]
+    },
+    {
+      "stage": "4-structural-segmentation",
+      "requested": true,
+      "status": "done",
+      "last_run_at": "2026-03-24T15:07:08Z",
+      "inputs": [],
+      "invalidates": [
+        "5-witness-normalization-ranking",
+        "6-versification-alignment",
+        "7-transliteration",
+        "8-interlinear-morphology",
+        "9-reader-reliability",
+        "10-human-review"
+      ],
+      "outputs": [
+        "structured/greek.txt",
+        "structured/english.txt",
+        "structured/segments.json",
+        "structured/reference-inventory.json"
+      ],
+      "notes": [
+        "5 segments, verse-based refs 1.1-1.5"
+      ]
+    },
+    {
+      "stage": "5-witness-normalization-ranking",
+      "requested": true,
+      "status": "done",
+      "last_run_at": "2026-03-24T15:05:15Z",
+      "inputs": [],
+      "invalidates": [
+        "6-versification-alignment",
+        "8-interlinear-morphology",
+        "9-reader-reliability",
+        "10-human-review"
+      ],
+      "outputs": [
+        "witnesses/murray-1924.txt",
+        "witnesses/catalog.json"
+      ],
+      "notes": [
+        "Murray 1924 witness normalized and cataloged as versification-candidate"
+      ]
+    },
+    {
+      "stage": "6-versification-alignment",
+      "requested": true,
+      "status": "done",
+      "last_run_at": "2026-03-24T15:08:41Z",
+      "inputs": [],
+      "invalidates": [
+        "8-interlinear-morphology",
+        "9-reader-reliability",
+        "10-human-review"
+      ],
+      "outputs": [],
+      "notes": [
+        "witness versification: murray-1924, 5/5 segments, 100% coverage"
+      ]
+    },
+    {
+      "stage": "7-transliteration",
+      "requested": true,
+      "status": "done",
+      "last_run_at": "2026-03-24T15:09:39Z",
+      "inputs": [
+        "structured/reference-inventory.json"
+      ],
+      "invalidates": [
+        "9-reader-reliability",
+        "10-human-review"
+      ],
+      "outputs": [
+        "interlinear/transliteration.json",
+        "qa/transliteration-report.md"
+      ],
+      "notes": [
+        "no structured Greek lines available for transliteration",
+        "generated 5 transliteration line(s) with lyceum-greek-latin-v1"
+      ]
+    },
+    {
+      "stage": "8-interlinear-morphology",
+      "requested": true,
+      "status": "done",
+      "inputs": [],
+      "invalidates": [
+        "9-reader-reliability",
+        "10-human-review"
+      ],
+      "outputs": [
+        "interlinear/chapter_01_llm.json",
+        "interlinear/last-run-summary.json",
+        "interlinear/generation-report.json"
+      ],
+      "notes": [
+        "30 words processed in 94s (3.13s/word)",
+        "Cost: $0.25 total ($0.0083/word)",
+        "Challenge rate: 23.3% (7/30 words)",
+        "Models: Sonnet-4 (creator/skeptic), Opus-4 (referee)"
+      ],
+      "last_run_at": "2026-03-24T15:14:15Z"
+    },
+    {
+      "stage": "9-reader-reliability",
+      "requested": true,
+      "status": "blocked",
+      "inputs": [],
+      "invalidates": [
+        "10-human-review"
+      ],
+      "outputs": [
+        "qa/reader-reliability-report.md",
+        "qa/feature-matrix.json"
+      ],
+      "notes": [
+        "Imported to texts.db and server running at localhost:8080",
+        "URL: /read/tlg0012.tlg001.proem.grc1",
+        "FINDING: 5/30 words have empty glosses in reader (Ἀχαιοῖς, πολλὰς, Ἄϊδι, ἑλώρια, Διὸς)",
+        "FINDING: Reader shows morph-dictionary glosses, not contextual_gloss from aligned_words",
+        "FINDING: θεὰ displays seeing/looking at instead of goddess - wrong lemma sense",
+        "ROOT CAUSE: reader template uses morph dictionary fallback, not aligned_words.contextual_gloss",
+        "CLASSIFICATION: render/template bug - source data is correct in DB"
+      ],
+      "last_run_at": "2026-03-24T15:40:00Z"
+    },
+    {
+      "stage": "10-human-review",
+      "requested": true,
+      "status": "pending",
+      "inputs": [],
+      "invalidates": [],
+      "outputs": [],
+      "notes": []
+    }
+  ]
+}

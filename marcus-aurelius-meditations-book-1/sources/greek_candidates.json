@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "kind": "greek",
+  "generated_at": "2026-03-23T09:00:00Z",
+  "candidates": [
+    {
+      "id": "perseus-grc2",
+      "title": "M. Antoninus Imperator Ad Se Ipsum",
+      "language": "grc",
+      "url": "https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/master/data/tlg0562/tlg001/tlg0562.tlg001.perseus-grc2.xml",
+      "editor": "Jan Hendrik Leopold",
+      "translator": null,
+      "publication_year": 1908,
+      "publisher": "Teubner",
+      "place": "Leipzig",
+      "license": "CC-BY-SA-4.0",
+      "format": "TEI XML",
+      "urn": "urn:cts:greekLit:tlg0562.tlg001.perseus-grc2",
+      "extraction_method": "XML parsing with book/chapter/section structure",
+      "quality_notes": "Scholarly critical edition from Perseus Digital Library. TEI-encoded with CTS URN references. Well-structured with explicit book.chapter.section divisions. Book 1 contains 17 sections (chapters), each with section subdivisions.",
+      "confidence_notes": "High quality: Perseus/OGL source, scholarly edition, machine-readable TEI format, explicit structural markup",
+      "parseability": "excellent",
+      "structural_usefulness": "excellent - book/chapter/section hierarchy explicit in XML",
+      "provenance_completeness": "complete",
+      "recommended": true,
+      "rank": 1,
+      "ranking_rationale": "Best available source: scholarly edition, open license, CTS-compatible, excellent XML structure, Perseus provenance"
+    }
+  ]
+}

@@ -1,6 +1,7 @@
 *.db
 *.db-shm
 *.db-wal
+*.backup-*/
 __pycache__/
 .DS_Store
 .direnv/

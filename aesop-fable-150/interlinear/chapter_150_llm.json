@@ -1,0 +1,760 @@
+{
+  "greek_edition": "workspace:aesop-fable-150",
+  "english_edition": "chapter_150.json",
+  "text": "aesop-fable-150",
+  "book": 150,
+  "run_id": "2026-03-23T17:05:57Z-aesop-fable-150-150",
+  "generator": "llm-interlinear-v1",
+  "segments": [
+    {
+      "reference": "150.title",
+      "greek": "Καρκῖνος καὶ ἀλώπηξ.",
+      "words": [
+        {
+          "form": "Καρκῖνος",
+          "gloss": "Crab",
+          "lemma": "καρκῖνος",
+          "pos": "noun",
+          "morphology": "masc nom sg; scored",
+          "provenance": {
+            "agent": "creator",
+            "model": "default",
+            "challenged": false
+          }
+        },
+        {
+          "form": "καὶ",
+          "gloss": "and",
+          "lemma": "καί",
+          "pos": "conj",
+          "morphology": "indeclform (conj); scored",
+          "provenance": {
+            "agent": "referee",
+            "model": "default",
+            "challenged": true,
+            "decision": "accept-creator"
+          }
+        },
+        {
+          "form": "ἀλώπηξ",
+          "gloss": "Fox",
+          "lemma": "ἀλώπηξ",
+          "pos": "noun",
+          "morphology": "masc/fem nom sg; scored",
+          "provenance": {
+            "agent": "creator",
+            "model": "default",
+            "challenged": false
+          }
+        }
+      ]
+    },
+    {
+      "reference": "150.1",
+      "greek": "Καρκῖνος ἀναβὰς ἀπὸ τῆς θαλάσσης ἐπί τινος αἰγιαλοῦ μόνος ἐνέμετο.",
+      "words": [
+        {
+          "form": "Καρκῖνος",
+          "gloss": "crab",
+          "lemma": "καρκῖνος",
+          "pos": "noun",
+          "morphology": "masc nom sg; scored",
+          "provenance": {
+            "agent": "creator",
+            "model": "default",
+            "challenged": false
+          }
+        },
+        {
+          "form": "ἀναβὰς",
+          "gloss": "having-come-up",
+          "lemma": "ἀναβαίνω",
+          "pos": "participle",
+          "morphology": "aor part act masc nom/voc sg (attic epic ionic) aorist active; scored",
+          "provenance": {
+            "agent": "creator",
+            "model": "default",
+            "challenged": false
+          }
+        },
+        {
+          "form": "ἀπὸ",
+          "gloss": "from",
+          "lemma": "ἀπό",
+          "pos": "prep",
+          "morphology": "indeclform (prep); scored",
+          "provenance": {
+            "agent": "creator",
+            "model": "default",
+            "challenged": false
+          }
+        },
+        {
+          "form": "τῆς",
+          "gloss": "the",
+          "lemma": "ὁ",
+          "pos": "article",
+          "morphology": "fem dat pl (epic); scored",
+          "provenance": {
+            "agent": "creator",
+            "model": "default",
+            "challenged": false
+          }
+        },
+        {
+          "form": "θαλάσσης",
+          "gloss": "sea",
+          "lemma": "θάλασσα",
+          "pos": "noun",
+          "morphology": "fem gen sg (attic epic ionic); scored",
+          "provenance": {
+            "agent": "creator",
+            "model": "default",
+            "challenged": false
+          }
+        },
+        {
+          "form": "ἐπί",
+          "gloss": "onto",
+          "lemma": "ἐπί",
+          "pos": "prep",
+          "morphology": "indeclform (prep); scored",
+          "provenance": {
+            "agent": "creator",
+            "model": "default",
+            "challenged": false
+          }
+        },
+        {
+          "form": "τινος",
+          "gloss": "a-certain",
+          "lemma": "τις",
+          "pos": "pronoun",
+          "morphology": "gen sg; scored",
+          "provenance": {
+            "agent": "creator",
+            "model": "default",
+            "challenged": false
+          }
+        },
+        {
+          "form": "αἰγιαλοῦ",
+          "gloss": "shore",
+          "lemma": "αἰγιαλός",
+          "pos": "noun",
+          "morphology": "masc gen sg; scored",
+          "provenance": {
+            "agent": "referee",
+            "model": "default",
+            "challenged": true,
+            "decision": "accept-creator"
+          }
+        },
+        {
+          "form": "μόνος",
+          "gloss": "alone",
+          "lemma": "μόνος",
+          "pos": "adj",
+          "morphology": "masc nom sg; scored",
+          "provenance": {
+            "agent": "creator",
+            "model": "default",
+            "challenged": false
+          }
+        },
+        {
+          "form": "ἐνέμετο",
+          "gloss": "was-feeding",
+          "lemma": "νέμω",
+          "pos": "verb",
+          "morphology": "imperf ind mp 3rd sg imperfect middle/passive indicative; scored",
+          "provenance": {
+            "agent": "creator",
+            "model": "default",
+            "challenged": false
+          }
+        }
+      ]
+    },
+    {
+      "reference": "150.2",
+      "greek": "Ἀλώπηξ δὲ λιμώττουσα, ὡς ἐθεάσατο αὐτόν, ἀποροῦσα τροφῆς, προσδραμοῦσα συνέλαβεν αὐτόν.",
+      "words": [
+        {
+          "form": "Ἀλώπηξ",
+          "gloss": "fox",
+          "lemma": "ἀλώπηξ",
+          "pos": "noun",
+          "morphology": "masc/fem nom sg; scored",
+          "provenance": {
+            "agent": "referee",
+            "model": "default",
+            "challenged": true,
+            "decision": "accept-skeptic",
+            "creator_gloss": "fox",
+            "skeptic_gloss": "fox",
+            "reasoning": "Gloss is correct. The Skeptic's note about morphology (should be fem nom sg, not masc/fem) is a valid correction for the morph field. ἀλώπηξ is feminine."
+          }
+        },
+        {
+          "form": "δὲ",
+          "gloss": "and",
+          "lemma": "δέ",
+          "pos": "particle",
+          "morphology": "indeclform (particle); scored",
+          "provenance": {
+            "agent": "creator",
+            "model": "default",
+            "challenged": false
+          }
+        },
+        {
+          "form": "λιμώττουσα",
+          "gloss": "being-hungry",
+          "lemma": "λιμώσσω",
+          "pos": "participle",
+          "morphology": "pres part act fem nom/voc sg (attic epic doric ionic) present active; scored",
+          "provenance": {
+            "agent": "referee",
+            "model": "default",
+            "challenged": true,
+            "decision": "accept-skeptic",
+            "creator_gloss": "being-hungry",
+            "skeptic_gloss": "being-hungry",
+            "reasoning": "The Skeptic is right that the standard Attic lemma is λιμώττω. The form λιμώττουσα with -ττ- is Attic, so the lemma should match. Gloss 'being-hungry' is correct."
+          }
+        },
+        {
+          "form": "ὡς",
+          "gloss": "when",
+          "lemma": "ὡς",
+          "pos": "conjunction",
+          "morphology": "indeclform (adverb); scored",
+          "provenance": {
+            "agent": "creator",
+            "model": "default",
+            "challenged": false
+          }
+        },
+        {
+          "form": "ἐθεάσατο",
+          "gloss": "saw",
+          "lemma": "θεάομαι",
+          "pos": "verb",
+          "morphology": "aor ind mp 3rd sg (attic) aorist middle/passive indicative; scored",
+          "provenance": {
+            "agent": "creator",
+            "model": "default",
+            "challenged": false
+          }
+        },
+        {
+          "form": "αὐτόν",
+          "gloss": "him",
+          "lemma": "αὐτός",
+          "pos": "pronoun",
+          "morphology": "masc acc sg; scored",
+          "provenance": {
+            "agent": "referee",
+            "model": "default",
+            "challenged": true,
+            "decision": "accept-skeptic",
+            "creator_gloss": "him",
+            "skeptic_gloss": "him",
+            "reasoning": "The Skeptic is correct that the lemma should be αὐτός (pronoun), not ἑαυτοῦ (reflexive). The fox saw *him* (the grape-picker or whoever), not herself. Gloss 'him' is correct either way."
+          }
+        },
+        {
+          "form": "ἀποροῦσα",
+          "gloss": "lacking",
+          "lemma": "ἀπορέω",
+          "pos": "participle",
+          "morphology": "pres part act fem nom/voc sg (attic epic doric) present active; scored",
+          "provenance": {
+            "agent": "referee",
+            "model": "default",
+            "challenged": true,
+            "decision": "accept-skeptic",
+            "creator_gloss": "in-need-of",
+            "skeptic_gloss": "lacking",
+            "reasoning": "The Skeptic is correct on the lemma (ἀπορέω, not ἀφοράω). 'Lacking' is also a better gloss: it's more compact and precise for ἀπορέω + genitive (τροφῆς = food). 'In-need-of' is not wrong but 'lacking' is superior."
+          }
+        },
+        {
+          "form": "τροφῆς",
+          "gloss": "food",
+          "lemma": "τροφή",
+          "pos": "noun",
+          "morphology": "fem gen sg (attic epic ionic); scored",
+          "provenance": {
+            "agent": "creator",
+            "model": "default",
+            "challenged": false
+          }
+        },
+        {
+          "form": "προσδραμοῦσα",
+          "gloss": "running-up",
+          "lemma": "προστρέχω",
+          "pos": "participle",
+          "morphology": "aor part act fem nom/voc sg (attic epic doric ionic) aorist active; scored",
+          "provenance": {
+            "agent": "creator",
+            "model": "default",
+            "challenged": false
+          }
+        },
+        {
+          "form": "συνέλαβεν",
+          "gloss": "caught",
+          "lemma": "συλλαμβάνω",
+          "pos": "verb",
+          "morphology": "aor ind act 3rd sg aorist active indicative; scored",
+          "provenance": {
+            "agent": "creator",
+            "model": "default",
+            "challenged": false
+          }
+        },
+        {
+          "form": "αὐτόν",
+          "gloss": "him",
+          "lemma": "αὐτός",
+          "pos": "pronoun",
+          "morphology": "masc acc sg; scored",
+          "provenance": {
+            "agent": "referee",
+            "model": "default",
+            "challenged": true,
+            "decision": "accept-skeptic",
+            "creator_gloss": "him",
+            "skeptic_gloss": "him",
+            "reasoning": "The Skeptic is correct that the lemma should be αὐτός (pronoun), not ἑαυτοῦ (reflexive). The fox saw *him* (the grape-picker or whoever), not herself. Gloss 'him' is correct either way."
+          }
+        }
+      ]
+    },
+    {
+      "reference": "150.3",
+      "greek": "Ὁ δὲ μέλλων καταβιβρώσκεσθαι ἔφη· Ἀλλ' ἔγωγε δίκαια πέπονθα, ὅτι θαλάσσιος ὢν χερσαῖος ἠβουλήθην γενέσθαι.",
+      "words": [
+        {
+          "form": "Ὁ",
+          "gloss": "he",
+          "lemma": "ὁ",
+          "pos": "article",
+          "morphology": "masc nom sg; scored",
+          "provenance": {
+            "agent": "creator",
+            "model": "default",
+            "challenged": false
+          }
+        },
+        {
+          "form": "δὲ",
+          "gloss": "and",
+          "lemma": "δέ",
+          "pos": "particle",
+          "morphology": "indeclform (particle); scored",
+          "provenance": {
+            "agent": "creator",
+            "model": "default",
+            "challenged": false
+          }
+        },
+        {
+          "form": "μέλλων",
+          "gloss": "being-about",
+          "lemma": "μέλλω",
+          "pos": "participle",
+          "morphology": "pres part act masc nom sg present active; scored",
+          "provenance": {
+            "agent": "creator",
+            "model": "default",
+            "challenged": false
+          }
+        },
+        {
+          "form": "καταβιβρώσκεσθαι",
+          "gloss": "to-be-devoured",
+          "lemma": "καταβιβρώσκω",
+          "pos": "verb",
+          "morphology": "pres inf mp present middle/passive infinitive; scored",
+          "provenance": {
+            "agent": "creator",
+            "model": "default",
+            "challenged": false
+          }
+        },
+        {
+          "form": "ἔφη",
+          "gloss": "said",
+          "lemma": "φημί",
+          "pos": "verb",
+          "morphology": "imperf ind act 3rd sg imperfect active indicative; scored",
+          "provenance": {
+            "agent": "creator",
+            "model": "default",
+            "challenged": false
+          }
+        },
+        {
+          "form": "Ἀλλ'",
+          "gloss": "but",
+          "lemma": "ἀλλά",
+          "pos": "conjunction",
+          "morphology": "indeclform (adverb); scored",
+          "provenance": {
+            "agent": "creator",
+            "model": "default",
+            "challenged": false
+          }
+        },
+        {
+          "form": "ἔγωγε",
+          "gloss": "I",
+          "lemma": "ἐγώ",
+          "pos": "pronoun",
+          "morphology": "masc/fem nom/voc 1st sg; scored",
+          "provenance": {
+            "agent": "creator",
+            "model": "default",
+            "challenged": false
+          }
+        },
+        {
+          "form": "δίκαια",
+          "gloss": "justly",
+          "lemma": "δίκαιος",
+          "pos": "adjective",
+          "morphology": "fem dat sg (attic doric aeolic); scored",
+          "provenance": {
+            "agent": "referee",
+            "model": "default",
+            "challenged": true,
+            "decision": "accept-creator"
+          }
+        },
+        {
+          "form": "πέπονθα",
+          "gloss": "have-suffered",
+          "lemma": "πάσχω",
+          "pos": "verb",
+          "morphology": "perf ind act 1st sg perfect active indicative; scored",
+          "provenance": {
+            "agent": "creator",
+            "model": "default",
+            "challenged": false
+          }
+        },
+        {
+          "form": "ὅτι",
+          "gloss": "because",
+          "lemma": "ὅτι",
+          "pos": "conjunction",
+          "morphology": "indeclform (adverb); scored",
+          "provenance": {
+            "agent": "referee",
+            "model": "default",
+            "challenged": true,
+            "decision": "accept-skeptic",
+            "creator_gloss": "because",
+            "skeptic_gloss": "because",
+            "reasoning": "The Skeptic is right that the lemma should be ὅτι (causal conjunction), not ὅστις. The gloss 'because' is correct and both agree on it. The lemma correction is important."
+          }
+        },
+        {
+          "form": "θαλάσσιος",
+          "gloss": "sea-",
+          "lemma": "θαλάσσιος",
+          "pos": "adjective",
+          "morphology": "masc nom sg; scored",
+          "provenance": {
+            "agent": "referee",
+            "model": "default",
+            "challenged": false,
+            "creator_gloss": "a-sea-creature",
+            "decision": "spot-check-fix",
+            "reasoning": "θαλάσσιος is an adjective meaning 'of the sea / marine.' The gloss 'a-sea-creature' bakes in the noun meaning that comes from context (i.e., 'being a sea-creature' = θαλάσσιος ὤν). A more accurate single-word gloss is 'marine' or 'sea-' to reflect that it's an adjective. However, since this is a reader gloss and the contextual meaning is clear, 'sea-' is preferable — let the participle ὤν carry 'being' and the reader infer the substantive use."
+          }
+        },
+        {
+          "form": "ὢν",
+          "gloss": "being",
+          "lemma": "εἰμί",
+          "pos": "participle",
+          "morphology": "pres part act masc nom sg present active; scored",
+          "provenance": {
+            "agent": "referee",
+            "model": "default",
+            "challenged": true,
+            "decision": "accept-skeptic",
+            "creator_gloss": "being",
+            "skeptic_gloss": "being",
+            "reasoning": "The Skeptic is correct: ὤν is the present active participle (masc nom sg) of εἰμί, not from ἄν. The gloss 'being' is correct and both agree on it. The lemma correction is essential."
+          }
+        },
+        {
+          "form": "χερσαῖος",
+          "gloss": "land-",
+          "lemma": "χερσαῖος",
+          "pos": "adjective",
+          "morphology": "masc nom sg; scored",
+          "provenance": {
+            "agent": "referee",
+            "model": "default",
+            "challenged": false,
+            "creator_gloss": "a-land-creature",
+            "decision": "spot-check-fix",
+            "reasoning": "Same issue as θαλάσσιος: χερσαῖος is an adjective meaning 'of the land / terrestrial.' The gloss 'a-land-creature' overloads the adjective with a noun phrase. A better gloss is 'land-' or 'terrestrial' to reflect its adjectival nature. The substantive sense emerges from γενέσθαι ('to become [a] land-[creature]')."
+          }
+        },
+        {
+          "form": "ἠβουλήθην",
+          "gloss": "wished",
+          "lemma": "βούλομαι",
+          "pos": "verb",
+          "morphology": "aor ind pass 3rd pl (attic epic doric aeolic) aorist passive indicative; scored",
+          "provenance": {
+            "agent": "referee",
+            "model": "default",
+            "challenged": true,
+            "decision": "accept-skeptic",
+            "creator_gloss": "wished",
+            "skeptic_gloss": "wished",
+            "reasoning": "The Skeptic is correct on all counts: lemma should be βούλομαι, and the form is 1st singular aorist indicative (passive/deponent), not 3rd plural. The speaker says 'I wished,' matching the first-person context (ἔγωγε, πέπονθα). The gloss 'wished' is correct and both agree."
+          }
+        },
+        {
+          "form": "γενέσθαι",
+          "gloss": "to-become",
+          "lemma": "γίγνομαι",
+          "pos": "verb",
+          "morphology": "aor inf mid aorist middle infinitive; scored",
+          "provenance": {
+            "agent": "creator",
+            "model": "default",
+            "challenged": false
+          }
+        }
+      ]
+    },
+    {
+      "reference": "150.4",
+      "greek": "Οὕτω καὶ τῶν ἀνθρώπων οἱ τὰ οἰκεῖα καταλιπόντες ἐπιτηδεύματα καὶ τοῖς μηδὲν προσήκουσιν ἐπιχειροῦντες εἰκότως δυστυχοῦσιν.",
+      "words": [
+        {
+          "form": "Οὕτω",
+          "gloss": "thus",
+          "lemma": "οὕτως",
+          "pos": "adv",
+          "morphology": "indeclform (adverb); scored",
+          "provenance": {
+            "agent": "creator",
+            "model": "default",
+            "challenged": false
+          }
+        },
+        {
+          "form": "καὶ",
+          "gloss": "and",
+          "lemma": "καί",
+          "pos": "conj",
+          "morphology": "indeclform (conj); scored",
+          "provenance": {
+            "agent": "referee",
+            "model": "default",
+            "challenged": true,
+            "decision": "accept-skeptic",
+            "creator_gloss": "also",
+            "skeptic_gloss": "and",
+            "reasoning": "The second καί coordinates the two participles καταλιπόντες and ἐπιχειροῦντες, so 'and' is correct here, not 'also'."
+          }
+        },
+        {
+          "form": "τῶν",
+          "gloss": "of-the",
+          "lemma": "ὁ",
+          "pos": "article",
+          "morphology": "fem gen pl; scored",
+          "provenance": {
+            "agent": "referee",
+            "model": "default",
+            "challenged": true,
+            "decision": "accept-creator"
+          }
+        },
+        {
+          "form": "ἀνθρώπων",
+          "gloss": "humans",
+          "lemma": "ἄνθρωπος",
+          "pos": "noun",
+          "morphology": "masc gen pl; scored",
+          "provenance": {
+            "agent": "creator",
+            "model": "default",
+            "challenged": false
+          }
+        },
+        {
+          "form": "οἱ",
+          "gloss": "those-who",
+          "lemma": "ὁ",
+          "pos": "article",
+          "morphology": "masc nom/voc pl; scored",
+          "provenance": {
+            "agent": "referee",
+            "model": "default",
+            "challenged": true,
+            "decision": "accept-creator"
+          }
+        },
+        {
+          "form": "τὰ",
+          "gloss": "the",
+          "lemma": "ὁ",
+          "pos": "article",
+          "morphology": "fem acc dual; scored",
+          "provenance": {
+            "agent": "referee",
+            "model": "default",
+            "challenged": true,
+            "decision": "accept-creator"
+          }
+        },
+        {
+          "form": "οἰκεῖα",
+          "gloss": "own",
+          "lemma": "οἰκεῖος",
+          "pos": "adj",
+          "morphology": "fem dat sg (attic doric aeolic); scored",
+          "provenance": {
+            "agent": "referee",
+            "model": "default",
+            "challenged": true,
+            "decision": "accept-creator"
+          }
+        },
+        {
+          "form": "καταλιπόντες",
+          "gloss": "having-abandoned",
+          "lemma": "καταλείπω",
+          "pos": "participle",
+          "morphology": "aor part act masc nom/voc pl aorist active; scored",
+          "provenance": {
+            "agent": "creator",
+            "model": "default",
+            "challenged": false
+          }
+        },
+        {
+          "form": "ἐπιτηδεύματα",
+          "gloss": "pursuits",
+          "lemma": "ἐπιτήδευμα",
+          "pos": "noun",
+          "morphology": "neut nom/voc/acc pl; scored",
+          "provenance": {
+            "agent": "creator",
+            "model": "default",
+            "challenged": false
+          }
+        },
+        {
+          "form": "καὶ",
+          "gloss": "and",
+          "lemma": "καί",
+          "pos": "conj",
+          "morphology": "indeclform (conj); scored",
+          "provenance": {
+            "agent": "referee",
+            "model": "default",
+            "challenged": true,
+            "decision": "accept-skeptic",
+            "creator_gloss": "also",
+            "skeptic_gloss": "and",
+            "reasoning": "The second καί coordinates the two participles καταλιπόντες and ἐπιχειροῦντες, so 'and' is correct here, not 'also'."
+          }
+        },
+        {
+          "form": "τοῖς",
+          "gloss": "the-things",
+          "lemma": "ὁ",
+          "pos": "article",
+          "morphology": "masc/neut dat pl; scored",
+          "provenance": {
+            "agent": "creator",
+            "model": "default",
+            "challenged": false
+          }
+        },
+        {
+          "form": "μηδὲν",
+          "gloss": "nothing",
+          "lemma": "μηδείς",
+          "pos": "pron",
+          "morphology": "neut nom/voc/acc sg; scored",
+          "provenance": {
+            "agent": "referee",
+            "model": "default",
+            "challenged": true,
+            "decision": "accept-skeptic",
+            "creator_gloss": "not-at-all",
+            "skeptic_gloss": "nothing",
+            "reasoning": "μηδέν is the neut acc sg of μηδείς. Here it functions adverbially ('things concerning them in nothing / not at all'), but 'nothing' better reflects the morphological form. The translation 'things that do not concern them' paraphrases the combination of μηδέν + προσήκουσιν."
+          }
+        },
+        {
+          "form": "προσήκουσιν",
+          "gloss": "concerning",
+          "lemma": "προσήκω",
+          "pos": "participle",
+          "morphology": "pres part act masc/neut dat pl (attic epic doric ionic) present active; scored",
+          "provenance": {
+            "agent": "referee",
+            "model": "default",
+            "challenged": true,
+            "decision": "accept-creator"
+          }
+        },
+        {
+          "form": "ἐπιχειροῦντες",
+          "gloss": "attempting",
+          "lemma": "ἐπιχειρέω",
+          "pos": "participle",
+          "morphology": "pres part act masc nom/voc pl (attic epic doric) present active; scored",
+          "provenance": {
+            "agent": "creator",
+            "model": "default",
+            "challenged": false
+          }
+        },
+        {
+          "form": "εἰκότως",
+          "gloss": "reasonably",
+          "lemma": "εἰκότως",
+          "pos": "adv",
+          "morphology": "indeclform (adverb); scored",
+          "provenance": {
+            "agent": "creator",
+            "model": "default",
+            "challenged": false
+          }
+        },
+        {
+          "form": "δυστυχοῦσιν",
+          "gloss": "meet-with-misfortune",
+          "lemma": "δυστυχέω",
+          "pos": "verb",
+          "morphology": "pres ind act 3rd pl (attic epic doric) present active indicative; scored",
+          "provenance": {
+            "agent": "referee",
+            "model": "default",
+            "challenged": true,
+            "decision": "accept-creator"
+          }
+        }
+      ]
+    }
+  ],
+  "mode": "agent"
+}

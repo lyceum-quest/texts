@@ -1,0 +1,118 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-03-27T00:00:00Z",
+  "updated_at": "2026-03-29T00:00:00Z",
+  "current_stage": "10-human-review",
+  "last_profile": "add",
+  "invalidated_stages": [],
+  "stages": [
+    {
+      "stage": "0-intake",
+      "requested": true,
+      "status": "done",
+      "last_run_at": "2026-03-27T00:00:00Z",
+      "inputs": [],
+      "invalidates": [],
+      "outputs": [],
+      "notes": ["workspace initialized for autoresearch benchmark"]
+    },
+    {
+      "stage": "1-source-discovery",
+      "requested": true,
+      "status": "done",
+      "last_run_at": "2026-03-27T00:00:00Z",
+      "inputs": [],
+      "invalidates": [],
+      "outputs": [],
+      "notes": ["Perseus Greek (Murray 1919)", "Murray 1919 English translation"]
+    },
+    {
+      "stage": "2-acquisition-extraction",
+      "requested": true,
+      "status": "done",
+      "last_run_at": "2026-03-27T00:00:00Z",
+      "inputs": [],
+      "invalidates": [],
+      "outputs": [],
+      "notes": ["Greek and English extracted from Perseus/Murray"]
+    },
+    {
+      "stage": "3-cleaning-normalization",
+      "requested": true,
+      "status": "done",
+      "last_run_at": "2026-03-27T00:00:00Z",
+      "inputs": [],
+      "invalidates": [],
+      "outputs": [],
+      "notes": ["Unicode NFC normalization applied"]
+    },
+    {
+      "stage": "4-structural-segmentation",
+      "requested": true,
+      "status": "done",
+      "last_run_at": "2026-03-27T00:00:00Z",
+      "inputs": [],
+      "invalidates": [],
+      "outputs": ["structured/greek.txt", "structured/segments.json"],
+      "notes": ["5 segments, verse-based refs 1.1-1.5"]
+    },
+    {
+      "stage": "5-witness-normalization-ranking",
+      "requested": true,
+      "status": "skipped",
+      "last_run_at": "2026-03-27T00:00:00Z",
+      "inputs": [],
+      "invalidates": [],
+      "outputs": [],
+      "notes": ["No witnesses cataloged; translation in versification/"]
+    },
+    {
+      "stage": "6-versification-alignment",
+      "requested": true,
+      "status": "done",
+      "last_run_at": "2026-03-27T00:00:00Z",
+      "inputs": [],
+      "invalidates": [],
+      "outputs": ["versification/english_edition.json"],
+      "notes": ["Murray 1919 versified, 5/5 segments, 100% coverage"]
+    },
+    {
+      "stage": "7-transliteration",
+      "requested": true,
+      "status": "skipped",
+      "last_run_at": "2026-03-27T00:00:00Z",
+      "inputs": [],
+      "invalidates": [],
+      "outputs": [],
+      "notes": ["Not yet generated"]
+    },
+    {
+      "stage": "8-interlinear-morphology",
+      "requested": true,
+      "status": "done",
+      "last_run_at": "2026-03-29T00:00:00Z",
+      "inputs": [],
+      "invalidates": [],
+      "outputs": ["interlinear/chapter_01_llm.json"],
+      "notes": ["LLM interlinear via autoresearch-optimized prompts", "40 tokens, Creator→Skeptic→Referee pipeline"]
+    },
+    {
+      "stage": "9-reader-reliability",
+      "requested": true,
+      "status": "pending",
+      "inputs": [],
+      "invalidates": [],
+      "outputs": [],
+      "notes": []
+    },
+    {
+      "stage": "10-human-review",
+      "requested": true,
+      "status": "pending",
+      "inputs": [],
+      "invalidates": [],
+      "outputs": [],
+      "notes": []
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "events": [
+    {
+      "at": "2026-03-23T08:52:10Z",
+      "stage": "0-intake",
+      "action": "workspace_initialized",
+      "profile": "add",
+      "affected_stages": [
+        "0-intake",
+        "1-source-discovery",
+        "2-acquisition-extraction",
+        "3-cleaning-normalization",
+        "4-structural-segmentation",
+        "5-witness-normalization-ranking",
+        "6-versification-alignment",
+        "7-transliteration",
+        "8-interlinear-morphology",
+        "9-reader-reliability",
+        "10-human-review"
+      ],
+      "notes": "Created canonical text-pipeline workspace."
+    },
+    {
+      "at": "2026-03-23T09:00:00Z",
+      "stage": "1-source-discovery",
+      "action": "stage_completed",
+      "profile": "add",
+      "notes": "Found Perseus TEI XML for Greek (Leopold 1908), George Long (1862) and Meric Casaubon (1634) for English. No treebank available. Reference system: Book.Chapter.Section."
+    },
+    {
+      "at": "2026-03-23T09:08:20Z",
+      "stage": "4-structural-segmentation",
+      "action": "segmentation_ran",
+      "profile": "add",
+      "affected_stages": [
+        "4-structural-segmentation"
+      ],
+      "notes": "segmented 3 clean file(s); reference system: section; unit: section"
+    },
+    {
+      "at": "2026-03-23T09:21:28Z",
+      "stage": "7-transliteration",
+      "action": "transliteration_ran",
+      "profile": "add",
+      "affected_stages": [
+        "7-transliteration"
+      ],
+      "notes": "no structured Greek lines available for transliteration"
+    },
+    {
+      "at": "2026-03-23T09:22:21Z",
+      "stage": "7-transliteration",
+      "action": "transliteration_ran",
+      "profile": "add",
+      "affected_stages": [
+        "7-transliteration"
+      ],
+      "notes": "generated 17 transliteration line(s) with lyceum-greek-latin-v1"
+    },
+    {
+      "at": "2026-03-23T09:24:30Z",
+      "stage": "8-interlinear-morphology",
+      "action": "treebank_provider_ran",
+      "profile": "add",
+      "affected_stages": [
+        "8-interlinear-morphology"
+      ],
+      "notes": "parsed 0 treebank reference entrie(s); parsed 0 treebank token(s); consumable exact-reference entrie(s): 0; source path: output/texts/marcus-aurelius-meditations-book-1/interlinear/no-treebank.conllu; treebank validation note count: 2; no treebank references were parsed; no treebank tokens were parsed"
+    }
+  ]
+}

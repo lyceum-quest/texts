@@ -1,0 +1,8 @@
+{
+  "method": "witness-versification",
+  "witness_id": "murray-1924",
+  "total_segments": 5,
+  "coverage": 1.0,
+  "empty_segments": 0,
+  "notes": "1:1 verse alignment, Murray prose maps directly to Greek hexameter lines"
+}

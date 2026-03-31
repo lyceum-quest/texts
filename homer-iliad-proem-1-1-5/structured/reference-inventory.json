@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-03-24T15:07:08Z",
+  "reference_system": "verse",
+  "unit": "line",
+  "entries": [
+    {
+      "source_path": "clean/greek.txt",
+      "structured_path": "structured/segments.json",
+      "unit_count": 5,
+      "first_ref": "1.1",
+      "last_ref": "1.5"
+    }
+  ]
+}

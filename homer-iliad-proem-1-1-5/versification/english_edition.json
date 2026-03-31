@@ -1,0 +1,11 @@
+{
+  "edition": "murray-1924",
+  "source": "versified-witness",
+  "segments": [
+    {"ref": "1.1", "text": "The wrath sing, goddess, of Peleus' son, Achilles,"},
+    {"ref": "1.2", "text": "that destructive wrath which brought countless woes upon the Achaeans,"},
+    {"ref": "1.3", "text": "and sent forth to Hades many valiant souls of heroes,"},
+    {"ref": "1.4", "text": "and made them themselves spoil for dogs"},
+    {"ref": "1.5", "text": "and a feast for birds, and the plan of Zeus was being accomplished,"}
+  ]
+}
