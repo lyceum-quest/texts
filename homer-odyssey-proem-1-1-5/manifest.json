@@ -9,7 +9,7 @@
   "author": "Homer",
   "author_urn": "urn:cts:greekLit:tlg0012",
   "work_urn": "urn:cts:greekLit:tlg0012.tlg002.proem",
-  "greek_edition_urn": "",
-  "english_edition_urn": "",
+  "greek_edition_urn": "urn:cts:greekLit:tlg0012.tlg002.proem.grc1",
+  "english_edition_urn": "urn:cts:greekLit:tlg0012.tlg002.proem.murray-eng1",
   "structure_type": "chapter-line"
 }
