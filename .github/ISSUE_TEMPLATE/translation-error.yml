@@ -1,0 +1,109 @@
+name: Translation Error Report
+description: Report an incorrect gloss, lemma, morphology, or part of speech
+title: "[Translation Error] "
+labels: ["translation-error", "needs-review"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for helping improve Lyceum's translations! 🏛️
+        
+        Every correction makes the corpus better for everyone. If you're not sure about something, report it anyway—we'll review it.
+
+  - type: dropdown
+    id: text
+    attributes:
+      label: Text
+      description: Which text contains the error?
+      options:
+        - aesop-fable-150
+        - homer-iliad-proem-1-1-5
+        - homer-odyssey-proem-1-1-5
+        - marcus-aurelius-meditations-book-1
+    validations:
+      required: true
+
+  - type: input
+    id: reference
+    attributes:
+      label: Reference
+      description: "Citation (e.g., `1.1`, `1.3`, `book-1.section-5`)"
+      placeholder: "1.1"
+    validations:
+      required: true
+
+  - type: input
+    id: greek_word
+    attributes:
+      label: Greek Word
+      description: "The Greek word with the error (copy-paste from the file or reader)"
+      placeholder: "μῆνιν"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: error_type
+    attributes:
+      label: Error Type
+      description: What kind of error is this?
+      options:
+        - Incorrect gloss (English translation)
+        - Incorrect lemma (dictionary headword)
+        - Incorrect part of speech
+        - Incorrect morphology
+        - Multiple errors
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: current_value
+    attributes:
+      label: Current Value
+      description: What does the file currently say? (You can paste the JSON snippet or just the value)
+      placeholder: |
+        "gloss": "anger"
+    validations:
+      required: true
+
+  - type: textarea
+    id: suggested_correction
+    attributes:
+      label: Suggested Correction
+      description: What should it be instead?
+      placeholder: |
+        "gloss": "wrath"
+    validations:
+      required: true
+
+  - type: textarea
+    id: reasoning
+    attributes:
+      label: Reasoning
+      description: Why is this correction needed? (Optional but very helpful!)
+      placeholder: |
+        μῆνις is the divine wrath of Homer's epic register, distinct from ὀργή (general anger) or θυμός (passionate anger). The context is Achilles' cosmic rage, not mere irritation.
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional_context
+    attributes:
+      label: Additional Context
+      description: Anything else we should know? (lexicon references, translation witnesses, etc.)
+      placeholder: |
+        LSJ s.v. μῆνις: "wrath, esp. of the gods"
+        Murray (1924) translates: "the wrath of Peleus' son Achilles"
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Acknowledgment
+      description: By submitting this issue, you agree to the following
+      options:
+        - label: I have checked that this error has not already been reported
+          required: true
+        - label: I understand that corrections may be reviewed by maintainers before being applied
+          required: true

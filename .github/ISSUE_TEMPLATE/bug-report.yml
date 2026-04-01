@@ -1,0 +1,126 @@
+name: Bug Report
+description: Report a data quality issue, missing file, or other problem
+title: "[Bug] "
+labels: ["bug", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Found a problem with the data or repository? Let us know! 🐛
+        
+        This template is for issues like:
+        - Missing or corrupted files
+        - JSON parsing errors
+        - Incorrect metadata
+        - QA report inconsistencies
+        - Database issues
+        
+        For **translation errors** (incorrect glosses, lemmata, etc.), use the [Translation Error Report](../new?template=translation-error.yml) template instead.
+
+  - type: dropdown
+    id: text
+    attributes:
+      label: Affected Text
+      description: Which text is affected? (Select "N/A" if it's a repository-wide issue)
+      options:
+        - N/A (repository-wide issue)
+        - aesop-fable-150
+        - homer-iliad-proem-1-1-5
+        - homer-odyssey-proem-1-1-5
+        - marcus-aurelius-meditations-book-1
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Issue Category
+      description: What kind of problem is this?
+      options:
+        - Missing or corrupted file
+        - JSON parsing error
+        - Incorrect metadata (manifest.json, state.json)
+        - QA report inconsistency
+        - Database file issue
+        - Provenance or licensing problem
+        - Documentation error
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: What's wrong?
+      placeholder: |
+        The `interlinear/chapter_01_llm.json` file in `homer-iliad-proem-1-1-5` is missing the `morphology` field for word #5.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected_behavior
+    attributes:
+      label: Expected Behavior
+      description: What should happen instead?
+      placeholder: |
+        Every word in the interlinear JSON should have a `morphology` field.
+    validations:
+      required: false
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to Reproduce
+      description: How can we reproduce this issue?
+      placeholder: |
+        1. Clone the repo
+        2. Navigate to `homer-iliad-proem-1-1-5/interlinear/`
+        3. Open `chapter_01_llm.json`
+        4. Look at segment 1.3, word index 4
+        5. Notice missing `morphology` field
+    validations:
+      required: false
+
+  - type: textarea
+    id: error_output
+    attributes:
+      label: Error Output
+      description: If you got an error message, paste it here
+      placeholder: |
+        ```
+        JSONDecodeError: Expecting ',' delimiter: line 42 column 5 (char 1234)
+        ```
+      render: shell
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional_context
+    attributes:
+      label: Additional Context
+      description: Anything else we should know?
+      placeholder: |
+        This might have been caused by the orchestrator pipeline run from 2026-03-24.
+    validations:
+      required: false
+
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: "How are you using the data? (e.g., `lyceum.quest reader`, `local clone`, `orchestrator pipeline`)"
+      placeholder: "Local clone, viewing in VS Code"
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Acknowledgment
+      description: By submitting this issue, you agree to the following
+      options:
+        - label: I have checked that this bug has not already been reported
+          required: true
+        - label: I have verified this is a data/repository issue, not a translation error
+          required: true

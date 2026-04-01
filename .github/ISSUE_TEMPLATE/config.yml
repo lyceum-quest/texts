@@ -1,0 +1,14 @@
+blank_issues_enabled: true
+contact_links:
+  - name: 💬 Discord Community
+    url: https://discord.gg/mnvAS6WUzz
+    about: Ask questions, discuss Greek texts, or chat with the community
+  - name: 📖 Main Site
+    url: https://lyceum.quest
+    about: Visit the Lyceum reader and browse available texts
+  - name: 🛠️ Orchestrator Pipeline
+    url: https://github.com/lyceum-quest/orchestrator
+    about: Generate new texts or run the data pipeline yourself
+  - name: 🌐 Reader Repository
+    url: https://github.com/lyceum-quest/reader
+    about: Issues with the web reader (UI, navigation, display bugs)
