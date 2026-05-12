@@ -1,0 +1,78 @@
+erDiagram
+    AUTHORS ||--o{ WORKS : has
+    WORKS ||--o{ EDITIONS : has
+    EDITIONS ||--o{ SEGMENTS : contains
+    EDITIONS ||--o{ EDITIONS : "parent_edition_id"
+    EDITIONS ||..o{ ALIGNED_SEGMENTS : "source_urn = urn"
+    EDITIONS ||..o{ ALIGNED_SEGMENTS : "translation_urn = urn"
+    ALIGNED_SEGMENTS ||--o{ ALIGNED_WORDS : has
+    EDITIONS ||..o{ TEXT_METADATA : "edition_urn = urn"
+
+    AUTHORS {
+        integer id PK
+        text urn UK
+        text name
+    }
+
+    WORKS {
+        integer id PK
+        integer author_id FK
+        text urn UK
+        text title
+        text language
+    }
+
+    EDITIONS {
+        integer id PK
+        integer work_id FK
+        text urn UK
+        text label
+        text description
+        text language
+        text type
+        boolean is_lyceum_curated "editions.db only"
+        integer parent_edition_id FK "editions.db only"
+        text parent_work_urn "reader editions.db only"
+    }
+
+    SEGMENTS {
+        integer id PK
+        integer edition_id FK
+        text reference
+        text content
+    }
+
+    ALIGNED_SEGMENTS {
+        integer id PK
+        text source_urn
+        text translation_urn
+        text reference
+        text greek
+        text transliteration
+        text generated
+        text generator
+    }
+
+    ALIGNED_WORDS {
+        integer id PK
+        integer segment_id FK
+        integer word_index
+        text greek
+        text transliteration
+        text lemma
+        text contextual_gloss
+        text pos
+        text morphology
+        text aligned_translation
+        text notes
+    }
+
+    TEXT_METADATA {
+        integer id PK
+        text edition_urn
+        text reference
+        text title
+        integer word_count
+        integer unique_lemma_count
+        integer difficulty_stage
+    }

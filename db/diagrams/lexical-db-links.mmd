@@ -1,0 +1,81 @@
+erDiagram
+    ALIGNED_SEGMENTS ||--o{ ALIGNED_WORDS : has
+    ALIGNED_WORDS }o..o{ MORPHOLOGY : "greek/form or lemma"
+    MORPHOLOGY }o..o{ DEFINITIONS : "lemma_normalized"
+    MORPHOLOGY }o..o| SHORTDEFS : "lemma_normalized"
+    VOCABULARY }o..o{ MORPHOLOGY : "form / lemma"
+    VOCABULARY }o..o{ DEFINITIONS : lemma
+    VOCABULARY }o..o| SHORTDEFS : lemma
+    VOCABULARY }o..o{ ALIGNED_SEGMENTS : "edition_code + source_ref"
+
+    ALIGNED_SEGMENTS {
+        integer id PK
+        text source_urn
+        text translation_urn
+        text reference
+        text greek
+        text transliteration
+        text generated
+        text generator
+    }
+
+    ALIGNED_WORDS {
+        integer id PK
+        integer segment_id FK
+        integer word_index
+        text greek
+        text transliteration
+        text lemma
+        text contextual_gloss
+        text pos
+        text morphology
+        text aligned_translation
+        text notes
+    }
+
+    MORPHOLOGY {
+        integer id PK
+        text form
+        text form_normalized
+        text lemma
+        text definition
+        text pos
+        text morphology
+        text tense
+        text voice
+        text mood
+        text person
+        text number
+        text case_name
+        text gender
+        text degree
+    }
+
+    DEFINITIONS {
+        integer id PK
+        text lemma
+        text lemma_normalized
+        text definitions
+    }
+
+    SHORTDEFS {
+        text lemma PK
+        text lemma_normalized
+        text definition
+    }
+
+    VOCABULARY {
+        integer id PK
+        integer user_id FK
+        text lemma
+        text form
+        text gloss
+        text pos
+        text morphology
+        text transliteration
+        text source_ref
+        text source_sentence
+        text source_translation
+        text edition_code
+        text contexts
+    }

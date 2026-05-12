@@ -1,0 +1,157 @@
+erDiagram
+    USERS ||--o{ VOCABULARY : owns
+    USERS ||--o{ REVIEW_HISTORY : records
+    VOCABULARY ||--o{ REVIEW_HISTORY : reviewed_as
+
+    USERS ||--o{ READING_PROGRESS : tracks
+    USERS ||--o{ TAGS : owns
+    VOCABULARY ||--o{ VOCABULARY_TAGS : tagged_with
+    TAGS ||--o{ VOCABULARY_TAGS : applies_to
+
+    USERS ||--o| USER_SETTINGS : configures
+    USERS ||--o{ GRAMMAR_CARDS : owns
+    USERS ||--o{ GRAMMAR_REVIEW_HISTORY : records
+    GRAMMAR_CARDS ||--o{ GRAMMAR_REVIEW_HISTORY : reviewed_as
+
+    USERS ||--o{ SESSIONS : legacy_sessions
+
+    USERS {
+        integer id PK
+        text email UK
+        text password_hash
+        datetime created_at
+        integer current_streak
+        integer longest_streak
+        date last_review_date
+        integer onboarding_step
+        text plan
+        text subscription_status
+        text auth_provider
+    }
+
+    VOCABULARY {
+        integer id PK
+        integer user_id FK
+        text lemma
+        text form
+        text gloss
+        text pos
+        text morphology
+        text transliteration
+        text source_ref
+        text source_sentence
+        text source_translation
+        text edition_code
+        real ease_factor
+        integer interval
+        integer interval_secs
+        integer state
+        integer learning_step
+        datetime next_review
+        integer review_count
+        integer correct_count
+        integer suspended
+        datetime buried_until
+        integer lapses
+        text contexts
+        integer review_context_idx
+        datetime created_at
+    }
+
+    REVIEW_HISTORY {
+        integer id PK
+        integer user_id FK
+        integer vocabulary_id FK
+        integer rating
+        integer time_ms
+        real prev_ease_factor
+        integer prev_interval
+        integer prev_interval_secs
+        integer prev_state
+        integer prev_learning_step
+        datetime prev_next_review
+        datetime reviewed_at
+    }
+
+    READING_PROGRESS {
+        integer id PK
+        integer user_id FK
+        text edition_id
+        text author_id
+        text work_id
+        text section_ref
+        text text_title
+        text author_name
+        datetime last_accessed
+    }
+
+    TAGS {
+        integer id PK
+        integer user_id FK
+        text name
+        text color
+        datetime created_at
+    }
+
+    VOCABULARY_TAGS {
+        integer vocabulary_id FK
+        integer tag_id FK
+    }
+
+    USER_SETTINGS {
+        integer user_id PK
+        text learning_steps
+        text relearning_steps
+        integer new_cards_per_day
+        integer graduating_interval
+        integer easy_interval
+        real lapse_multiplier
+        integer max_interval
+    }
+
+    GRAMMAR_CARDS {
+        integer id PK
+        integer user_id FK
+        text paradigm_id
+        text card_key
+        text card_type
+        real ease_factor
+        integer interval
+        integer interval_secs
+        integer state
+        integer learning_step
+        datetime next_review
+        integer review_count
+        integer correct_count
+        integer suspended
+        datetime buried_until
+        integer lapses
+        datetime created_at
+    }
+
+    GRAMMAR_REVIEW_HISTORY {
+        integer id PK
+        integer user_id FK
+        integer grammar_card_id FK
+        integer rating
+        integer time_ms
+        real prev_ease_factor
+        integer prev_interval
+        integer prev_interval_secs
+        integer prev_state
+        integer prev_learning_step
+        datetime prev_next_review
+        datetime reviewed_at
+    }
+
+    SESSIONS {
+        text token PK
+        integer user_id FK
+        datetime expires_at
+    }
+
+    SCHEMA_MIGRATIONS {
+        integer version PK
+        text description
+        datetime applied_at
+    }

@@ -1,0 +1,56 @@
+flowchart LR
+    subgraph Sources[Data producers]
+        Orchestrator[orchestrator pipeline]
+        CorpusImport[corpus import scripts]
+        MorphImport[morphology import]
+        LSJImport[LSJ import]
+        ReaderRuntime[reader runtime]
+    end
+
+    subgraph ReadOnly[Read-only reference databases]
+        TextsDB[(texts.db\nfull library\nbrowse + basic reading)]
+        EditionsDB[(editions.db\ncurated Lyceum editions\nalignments + glosses)]
+        CorpusDB[(corpus.db\nbroad corpus\noptional / historical)]
+        MorphDB[(morph.db\nforms, lemmas, POS, morphology)]
+        LSJDB[(lsj.db\nLSJ definitions\nshort definitions)]
+    end
+
+    subgraph ReadWrite[Read-write local state]
+        UsersDB[(users.db\nvocabulary, SRS, progress, settings)]
+    end
+
+    subgraph App[reader app]
+        DBStruct[internal/db.DB]
+        Browse[browse / work pages]
+        Read[reading interface]
+        WordPopup[word popup / morphology]
+        Interlinear[interlinear / aligned text]
+        SRS[vocabulary + review]
+    end
+
+    Orchestrator --> EditionsDB
+    CorpusImport --> TextsDB
+    CorpusImport -. optional .-> CorpusDB
+    MorphImport --> MorphDB
+    LSJImport --> LSJDB
+    ReaderRuntime <--> UsersDB
+
+    TextsDB --> DBStruct
+    EditionsDB --> DBStruct
+    CorpusDB -. optional .-> DBStruct
+    MorphDB --> DBStruct
+    LSJDB --> DBStruct
+    UsersDB <--> DBStruct
+
+    DBStruct --> Browse
+    DBStruct --> Read
+    DBStruct --> WordPopup
+    DBStruct --> Interlinear
+    DBStruct --> SRS
+
+    Browse --> TextsDB
+    Read --> TextsDB
+    Interlinear --> EditionsDB
+    WordPopup --> MorphDB
+    WordPopup --> LSJDB
+    SRS <--> UsersDB
