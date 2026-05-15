@@ -1,14 +1,18 @@
 # CoNLL-U Data
 
-This directory contains Ancient Greek dependency treebank data for Lyceum texts, copied from the `conllu-viz` project.
+This directory contains Ancient Greek dependency treebank data for Lyceum texts, loaded in the [CoNLL-U visualizer](https://conllu.lyceum.quest/) and available for other Lyceum tooling.
+
+CoNLL-U is a tabular format for token-level linguistic annotation. These files combine Greek text, lemmata, part-of-speech tags, morphology, dependency relations, sentence translations, and contextual English glosses.
 
 ## Contents
 
-- `aesop/fables/` — 52 Aesop fables as individual `.conllu` files, named with Perry number and reading-difficulty order.
-  - `perry-difficulty-map.csv` / `.json` rank the fables by estimated difficulty.
-  - `conllu-edition-map.json` maps Aesop CoNLL-U files to CTS/Lyceum edition metadata.
-- `aristotle/poetics/aristotle.poetics.tb.conllu` — Aristotle's *Poetics* treebank.
-- `xenophon/anabasis/book-01.tb.conllu` — Xenophon's *Anabasis*, Book 1 treebank.
+| Path | Contents |
+|---|---|
+| `aesop/fables/` | 52 Aesop fables as individual `.conllu` files. File names include an English slug, Perry number, and reading-difficulty order. |
+| `aesop/fables/perry-difficulty-map.csv` / `.json` | Difficulty ranking for the Aesop files, based on word count, vocabulary diversity, and sentence complexity. |
+| `aesop/fables/conllu-edition-map.json` | CTS/Lyceum edition metadata for Aesop treebank editions. |
+| `aristotle/poetics/aristotle.poetics.tb.conllu` | Aristotle's *Poetics* treebank. |
+| `xenophon/anabasis/book-01.tb.conllu` | Xenophon's *Anabasis*, Book 1 treebank. |
 
 ## Format
 
@@ -18,16 +22,32 @@ Files use [CoNLL-U](https://universaldependencies.org/format.html): one token pe
 ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
 ```
 
-The annotations follow Universal Dependencies v2.x conventions adapted for Ancient Greek. Rows include lemmas, UPOS tags, morphology, dependency heads/relations, and context-aware English glosses in `MISC`.
+The annotations follow Universal Dependencies v2.x conventions adapted for Ancient Greek.
 
-Sentence comments commonly include:
+Important columns:
 
-- `text` or source citation metadata
-- `translation_lang = en`
-- `prose_translation`
-- `literal_translation`
-- work-specific IDs such as `sent_id`, `sentence_id`, `parallel_id`, `document_id`, `subdoc`, and `Ref`
+- `FORM` — surface Greek token.
+- `LEMMA` — dictionary headword.
+- `UPOS` — Universal Dependencies part of speech.
+- `XPOS` — more detailed, project-specific morphological label.
+- `FEATS` — UD morphological features such as case, number, gender, tense, mood, voice, and person.
+- `HEAD` / `DEPREL` — syntactic dependency tree.
+- `MISC` — contextual glosses and citation references such as `gloss=...` and `Ref=...`.
+
+## Sentence metadata
+
+Sentence comment blocks commonly include:
+
+- Greek text (`text`) or source citation metadata.
+- `translation_lang = en`.
+- `prose_translation` for natural English translation.
+- `literal_translation` for more word-by-word English.
+- Work-specific IDs such as `sent_id`, `sentence_id`, `parallel_id`, `document_id`, `subdoc`, and `Ref`.
+
+Aesop files also use Perry-numbered IDs and Lyceum parallel IDs. Larger imported treebanks preserve source references in token or sentence metadata.
 
 ## Provenance and licensing
 
-These files were produced for the Lyceum Digital Library / related Greek treebanking work and include a mix of manual, LLM-assisted, and Glaux-derived annotations. File headers contain per-work provenance, editor/annotator, source edition, and license metadata. Preserve those headers when modifying or redistributing individual files.
+These files were produced for the Lyceum Digital Library and related Greek treebanking work. They include a mix of manual, LLM-assisted, and Glaux-derived annotations.
+
+Per-file headers contain the authoritative provenance, source edition, editor/annotator, conversion method, contact, and license metadata. Preserve those headers when modifying or redistributing individual files.
