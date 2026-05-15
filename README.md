@@ -10,7 +10,7 @@ It is organized as a small set of data subprojects. The top-level README gives t
 |---|---|---|
 | [`db/`](db/) | SQLite database documentation for reader, corpus, morphology, dictionary, and learner-state databases. The large `.db` artifacts are release assets, not normal git-tracked files. | [`db/README.md`](db/README.md) |
 | [`conllu/`](conllu/) | Ancient Greek CoNLL-U dependency treebank data used by the CoNLL-U visualizer and related Lyceum tooling. Includes Aesop fables, Aristotle's *Poetics*, and Xenophon's *Anabasis* Book 1. | [`conllu/README.md`](conllu/README.md) |
-| [`orchestrator/`](orchestrator/) | Archived per-text workspaces from the deprecated orchestrator pipeline. These are historical snapshots with raw sources, structured text, interlinear output, and QA artifacts where present. | [`orchestrator/README.md`](orchestrator/README.md) |
+| [`orchestrator/`](orchestrator/) | Archived per-text workspaces from the experimental (now deprecated) orchestrator pipeline. These are historical snapshots with raw sources, structured text, interlinear output, and QA artifacts where present. See discussion of the pipeline [here](https://blu.cx/posts/articles/2026-03-31-lyceum-pipeline/). | [`orchestrator/README.md`](orchestrator/README.md) |
 
 ## Release assets
 
